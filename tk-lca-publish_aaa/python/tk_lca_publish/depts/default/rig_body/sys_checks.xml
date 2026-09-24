@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="finished_task" allow_skip="false"/>
+        <check type="gen" name="shotgun_integrity" allow_skip="false"/>
+        <check type="gen" name="entity_folder_exists" allow_skip="false"/>
+        <check type="gen" name="tool_installation" allow_skip="false"/>
+        <check type="gen" name="version_tag" allow_skip="false"/>
+    </check_group>
+    <check_group name="Maya Checks">
+        <check type="gen" name="maya_file_naming" allow_skip="false"/>
+    </check_group>
+</root>
+

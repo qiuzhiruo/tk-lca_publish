@@ -1,0 +1,35 @@
+1，<process type="rig" name="turn_off_inherits_transform" mode="downstream"/>
+
+关闭['poly','shape','anim_skeletons_grp','anim_modules_grp','tech_skeletons_grp','tech_modules_grp'] 组的继承位移属性
+影响：这些组在rig中不能被约束或控制，否则子物体不会继承位移
+
+
+2，<process type="rig" name="set_defualt_rig_param" mode="downstream"/>
+
+设置动画需要的默认通用控制器属性，比如模型显示类型，IKFK模式，follow，等等。
+
+3，<process type="rig" name="lock_unused_transform" mode="downstream"/>
+
+锁定所有deformer的weight 和 weightList 属性以及blendShape的weights属性
+隐藏所有[locator,lattice,clusterHandle,follicle]的shape节点
+将所用骨骼的绘制改为None
+锁定所有骨骼的Orient属性
+锁定所有非CTRL类型的transform属性
+隐藏没有在[|model,|Facial_model,|poly] 的 ['mesh','nurbsSurface']这两种几何体类型
+将非控制器曲线形节点设置为reference显示模式
+隐藏所有RBF poseReader
+
+
+4，<process type="mod" name="display_smoothness" mode="downstream"/>
+
+将所有模型的光滑显示关闭
+
+
+5，<process type="rig" name="create_animRig_files" mode="downstream"/>
+
+创建anim rig
+
+
+6，<process type="rig" name="register_publish" mode="downstream"/>
+
+注册tech_rig 和 anim_rig文件

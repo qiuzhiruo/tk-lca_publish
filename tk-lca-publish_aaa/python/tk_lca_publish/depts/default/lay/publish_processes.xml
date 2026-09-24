@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<root>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="gen" name="reset_pivot" mode="downstream"/>
+    <process type="ani" name="pass_lock" mode="downstream"/>
+    <process type="lay" name="clean_scenes" mode="daily"/>
+    <process type="gen" name="maya_version_attr" mode="downstream"/>
+    <process type="gen" name="save_scene" mode="daily"/>
+    <process type="gen" name="viewport_display_setting" mode="downstream"/>
+    <process type="lay" name="create_stage_pivot" mode="downstream"/>
+    <process type="lay" name="lay_scene_graph_xml" mode="downstream"/>
+    <process type="gen" name="sg_asset_links" mode="daily"/>
+    <process type="lay" name="export_cam" mode="daily"/>
+    <process type="lay" name="export_stereo_data" mode="downstream"/>
+    <process type="lay" name="publish_lay_files" mode="downstream"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="gen" name="refresh_sequence_playlist" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <process type="gen" name="register_camera" mode="daily"/>
+    <process type="gen" name="register_publish" mode="downstream"/>
+    <process type="gen" name="approve_version" mode="downstream"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+    <process type="lay" name="version_up" mode="daily"/>
+    <!-- <process type="gen" name="close_maya" mode="daily"/> -->
+    <process type="ani" name="create_write_extra_data" mode="checked"/>
+</root>
+

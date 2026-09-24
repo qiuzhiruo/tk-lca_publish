@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<root>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <!--<process type="picture_lock" name="link_images" mode="daily"/>-->
+    <process type="picture_lock" name="copy_images" mode="daily"/>
+    <process type="picture_lock" name="publish_edt_files" mode="daily"/>
+    <process type="picture_lock" name="create_local_preview" mode="daily"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <process type="picture_lock" name="remove_local_preview" mode="daily"/>
+    <process type="gen" name="approve_version" mode="daily"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+    <process type="picture_lock" name="send_stereo_mov_job" mode="daily"/>
+</root>
+

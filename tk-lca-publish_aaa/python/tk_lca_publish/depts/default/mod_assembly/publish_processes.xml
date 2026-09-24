@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<root>
+    <process type="gen" name="save_scene" mode="downstream"/>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="mod_assembly" name="create_dir_on_server" mode="downstream"/>
+    <process type="mod_assembly" name="add_asset_reuse_info" mode="downstream"/>
+    <process type="mod" name="clean_mod_files" mode="downstream"/>
+    <process type="mod" name="model_mesh_xml" mode="downstream"/>
+    <process type="mod" name="publish_tex" mode="downstream"/>
+    <process type="mod" name="auto_proxy" mode="downstream"/>
+    <process type="mod" name="mesh_count" mode="downstream"/>
+    <process type="mod_assembly" name="maya_version_attr" mode="downstream"/>
+    <process type="mod" name="display_smoothness" mode="downstream"/>
+    <process type="mod" name="publish_mod_files" mode="downstream"/>
+    <process type="mod" name="clean_normals" mode="downstream"/>
+    <process type="mod" name="model_faces_count" mode="downstream"/>
+    <process type="mod" name="gpu_cache" mode="downstream"/>
+<!--    <process type="mod" name="build_gpuma_ma" mode="downstream"/>-->
+<!--    <process type="mod_assembly" name="rebuild_scene" mode="downstream"/>-->
+<!--    <process type="gen" name="version_up_and_save" mode="downstream"/>-->
+    <process type="mod_assembly" name="asset_scene_graph_xml" mode="downstream"/>
+    <process type="mod_assembly" name="color_id_cache" mode="downstream"/>
+    <process type="mod_assembly" name="create_sg_version" mode="downstream"/>
+    <process type="mod_assembly" name="upload_preview" mode="daily"/>
+    <process type="mod_assembly" name="register_publish" mode="downstream"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+    <process type="gen" name="sg_version_note" mode="downstream"/>
+
+</root>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="ani" name="publish_ani_files" mode="downstream"/>
+    <process type="ani_crowd" name="export_geo_cache" mode="downstream"/>
+    <process type="ani_crowd" name="export_actions" mode="downstream"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <process type="ani_crowd" name="register_publish" mode="downstream"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+    <process type="gen" name="new_scene" mode="downstream"/>
+</root>
+

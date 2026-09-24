@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="unknown_reference" allow_skip="false"/>
+        <check type="gen" name="check_plug_in" allow_skip="false"/>
+    </check_group>
+    <check_group name="Rigging">
+        <check type="rig" name="check_lookPass" allow_skip="false"/>
+        <check type="rig" name="check_animation_tasks" allow_skip="true"/>
+        <check type="gen" name="maya_ban_script_node" allow_skip="false"/>
+        <check type="gen" name="maya_kill_putiantongqing" allow_skip="false"/>
+        <check type="rig" name="check_modPath" allow_skip="false"/>
+        <check type="gen" name="check_asset_master" allow_skip="false"/>
+        <check type="rig" name="check_ani" allow_skip="false"/>
+        <check type="rig" name="ls_find_nozero_ctrl" allow_skip="true"/>
+        <check type="rig" name="check_mute_ctrl" allow_skip="true"/>
+        <check type="rig" name="check_Keyframe_ctrl" allow_skip="true"/>
+        <check type="rig" name="check_hierarchy" allow_skip="false"/>
+        <check type="rig" name="check_animation_tasks" allow_skip="true"/>
+        <!--check type="rig" name="check_muggle_restrictions" allow_skip="false"/-->
+        <check type="rig" name="check_anim_skeletons_grp" allow_skip="true"/>
+        <check type="gen" name="empty_reference_node" allow_skip="false"/>
+        <check type="rig" name="no_maya_reference" allow_skip="true"/>
+        <check type="rig" name="no_ref_namespace" allow_skip="false"/>
+        <check type="rig" name="master_grp_translate" allow_skip="true"/>
+    </check_group>
+    <check_group name="Misc">
+        <check type="gen" name="check_extra_namespace" allow_skip="false"/>
+        <check type="mod" name="no_instanced_node" allow_skip="false"/>
+        <!--<check type="gen" name="match_hierarchy" allow_skip="true"/>-->
+        <check type="mod" name="unique_name" allow_skip="true"/>
+        <check type="gen" name="working_units" allow_skip="false"/>
+        <check type="mod" name="image_file" allow_skip="false"/>
+
+    </check_group>
+</root>

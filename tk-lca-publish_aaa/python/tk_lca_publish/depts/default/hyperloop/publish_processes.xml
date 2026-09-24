@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="mod_asb" name="hyperloop_sub_assets" mode="downstream"/>
+    <process type="mod_asb" name="hyperloop_sub_versions" mode="downstream"/>
+    <process type="mod_asb" name="hyperloop_sub_asset_surfacing" mode="downstream"/>
+    <process type="mod_asb" name="hyperloop_build_asb" mode="downstream"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+
+</root>
+

@@ -1,0 +1,926 @@
+//Maya ASCII 2017ff05 scene
+//<?MG-AnimFile version="1.0" ?>
+//<anim name="threefacial" author="chengang" date="2020/04/27 15:34:34" range="0:50">
+//<icon name="threefacial_preview_persp.bmp">
+//<maya scene="D:/0001/xiuluo_crowd_d.rig.rigging_facial.ma" asset="" namespace="" objCount="17">
+//<objects list="brow_R_3_ctrl; brow_R_2_ctrl; brow_R_1_ctrl; brow_L_1_ctrl; brow_L_2_ctrl; brow_L_3_ctrl; eyelid_R_up_all_ctrl; eyelid_L_up_all_ctrl; eyelid_R_dn_all_ctrl; eyelid_L_dn_all_ctrl; mouth_L_up_2_ctrl; mouth_R_up_2_ctrl; mouth_R_dn_2_ctrl; mouth_L_dn_2_ctrl; mouth_L_1_ctrl; mouth_R_1_ctrl; jaw_M_open_ctrl; ">
+//Name: MG_PoseAnim_AnimCache.ma
+//Last modified: Mon, Apr 27, 2020 03:34:34 PM
+//Codeset: 936
+requires maya "2017ff05";
+requires "stereoCamera" "10.0";
+requires -dataType "ngSkinLayerDataStorage" "ngSkinTools" "1.7.3";
+currentUnit -l centimeter -a degree -t film;
+fileInfo "application" "maya";
+fileInfo "product" "Maya 2017";
+fileInfo "version" "2017";
+fileInfo "cutIdentifier" "201705190846-1017201";
+fileInfo "osv" "Microsoft Windows 7 Ultimate Edition, 64-bit Windows 7 Service Pack 1 (Build 7601)\n";
+createNode transform -n "MG_PoseAnim_animCache";
+	rename -uid "511A0577-4CA5-367E-B972-F7B36B38A8F7";
+	addAttr -ci true -sn "ns" -ln "ns" -dt "string";
+	addAttr -ci true -sn "range" -ln "range" -dt "string";
+	addAttr -ci true -sn "num" -ln "num" -at "long";
+	setAttr -l on -k off ".v" no;
+	setAttr -l on -k off ".tx";
+	setAttr -l on -k off ".ty";
+	setAttr -l on -k off ".tz";
+	setAttr -l on -k off ".rx";
+	setAttr -l on -k off ".ry";
+	setAttr -l on -k off ".rz";
+	setAttr -l on -k off ".sx";
+	setAttr -l on -k off ".sy";
+	setAttr -l on -k off ".sz";
+	setAttr ".ns" -type "string" "";
+	setAttr ".range" -type "string" "\"0:50\"";
+	setAttr ".num" 17;
+createNode transform -n "MG_PoseAnim_brow_R_3_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "A190F658-48CF-8934-4672-00BC9DAB5C29";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "brow_R_3_ctrl";
+createNode transform -n "MG_PoseAnim_brow_R_2_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "2F54A5F0-43CC-9D0D-1DA4-208349B0BCCF";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "brow_R_2_ctrl";
+createNode transform -n "MG_PoseAnim_brow_R_1_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "35B3475D-4C53-1DF8-542A-41AABD1D4933";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "brow_R_1_ctrl";
+createNode transform -n "MG_PoseAnim_brow_L_1_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "5A02F539-4CE2-2EE0-EE11-73BE89590BC2";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "brow_L_1_ctrl";
+createNode transform -n "MG_PoseAnim_brow_L_2_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "4ECDC2F2-4631-C1AC-D8F5-39B70BC706A7";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "brow_L_2_ctrl";
+createNode transform -n "MG_PoseAnim_brow_L_3_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "A42891DD-4D63-BE20-AB9F-5482006B3EF2";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "brow_L_3_ctrl";
+createNode transform -n "MG_PoseAnim_eyelid_R_up_all_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "305D9A78-446D-C793-D37B-8B8AD7594895";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "eyelid_R_up_all_ctrl";
+createNode transform -n "MG_PoseAnim_eyelid_L_up_all_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "0B214887-428B-BA26-42CC-638924814EDE";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "eyelid_L_up_all_ctrl";
+createNode transform -n "MG_PoseAnim_eyelid_R_dn_all_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "CDFC56F8-40CA-7B36-764F-41A55313D175";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "eyelid_R_dn_all_ctrl";
+createNode transform -n "MG_PoseAnim_eyelid_L_dn_all_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "7DFB23B6-4ACD-E107-8B7A-0DB2AEC1CE8B";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "eyelid_L_dn_all_ctrl";
+createNode transform -n "MG_PoseAnim_mouth_L_up_2_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "BC72D429-4F26-88E6-62B7-E5B18CAB1B08";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".tz";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "mouth_L_up_2_ctrl";
+createNode transform -n "MG_PoseAnim_mouth_R_up_2_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "A0DC8ACC-4388-F8A5-8C76-F0B1498B822D";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".tz";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "mouth_R_up_2_ctrl";
+createNode transform -n "MG_PoseAnim_mouth_R_dn_2_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "30F30D6B-4A4B-CF1C-D9EC-1A85A7AC0040";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".tz";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "mouth_R_dn_2_ctrl";
+createNode transform -n "MG_PoseAnim_mouth_L_dn_2_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "EEBAD099-4178-56BC-68B7-E4B8CE3EF9CB";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".tz";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "mouth_L_dn_2_ctrl";
+createNode transform -n "MG_PoseAnim_mouth_L_1_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "2544AE19-4D95-0FD2-D5E8-CCBDBFABB2B9";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".tz";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "mouth_L_1_ctrl";
+createNode transform -n "MG_PoseAnim_mouth_R_1_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "3079C50E-4676-9611-BAD8-0C9908A7F233";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr -k off ".tz";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".ObjName" -type "string" "mouth_R_1_ctrl";
+createNode transform -n "MG_PoseAnim_jaw_M_open_ctrl_animCache1" -p "MG_PoseAnim_animCache";
+	rename -uid "D2C49F8C-4AC0-5BF1-BAEA-8795D4702A31";
+	addAttr -ci true -sn "ObjName" -ln "ObjName" -dt "string";
+	setAttr -k off ".v";
+	setAttr ".ObjName" -type "string" "jaw_M_open_ctrl";
+createNode animCurveTL -n "MG_PoseAnim_brow_R_3_ctrl_animCache1_translateX";
+	rename -uid "9092B08B-4C47-4A90-B039-E8A01B762BAC";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_brow_R_3_ctrl_animCache1_translateY";
+	rename -uid "470F51A5-4712-CECF-A2DE-2FB803F34516";
+	setAttr ".tan" 2;
+	setAttr -s 12 ".ktv[0:11]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 1 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 38.461538265306125 -1 46.153846938775509 -1
+		 50 0.5;
+createNode animCurveTL -n "MG_PoseAnim_brow_R_3_ctrl_animCache1_translateZ";
+	rename -uid "FEA9C00C-4262-AA56-A06F-9B88FBF69E28";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 46.153846938775509 0;
+createNode animCurveTA -n "MG_PoseAnim_brow_R_3_ctrl_animCache1_rotateZ";
+	rename -uid "B37AA57A-4460-A496-EF32-1B8C37536BCE";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_brow_R_2_ctrl_animCache1_translateX";
+	rename -uid "F099B884-43A7-4315-2194-A191458B1152";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_brow_R_2_ctrl_animCache1_translateY";
+	rename -uid "6F693BEF-4E27-1493-D195-8C9A71F9DE18";
+	setAttr ".tan" 2;
+	setAttr -s 12 ".ktv[0:11]"  0 0 3.8461530612244896 0 7.6923086734693875 1
+		 11.538461734693877 1 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 38.461538265306125 -1 46.153846938775509 -1
+		 50 0.5;
+createNode animCurveTL -n "MG_PoseAnim_brow_R_2_ctrl_animCache1_translateZ";
+	rename -uid "201784C4-4357-ACDA-64D8-5AAA9FC1C15E";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 46.153846938775509 0;
+createNode animCurveTA -n "MG_PoseAnim_brow_R_2_ctrl_animCache1_rotateZ";
+	rename -uid "8E2EEFEA-475B-E7E2-DB47-46B95DC244EA";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_brow_R_1_ctrl_animCache1_translateX";
+	rename -uid "6C5A5F69-4B7B-97B0-D238-3880D41B717A";
+	setAttr ".tan" 2;
+	setAttr -s 12 ".ktv[0:11]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 38.461538265306125 -1 46.153846938775509 -1
+		 50 0;
+createNode animCurveTL -n "MG_PoseAnim_brow_R_1_ctrl_animCache1_translateY";
+	rename -uid "FC30966A-47DF-FFA1-2BB6-708C67C6AB8D";
+	setAttr ".tan" 2;
+	setAttr -s 12 ".ktv[0:11]"  0 0 3.8461530612244896 1 7.6923086734693875 1
+		 11.538461734693877 1 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 38.461538265306125 -1 46.153846938775509 -1
+		 50 0.5;
+createNode animCurveTL -n "MG_PoseAnim_brow_R_1_ctrl_animCache1_translateZ";
+	rename -uid "50D11570-4D58-E434-7B0D-F5B1E34CF534";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 46.153846938775509 0;
+createNode animCurveTA -n "MG_PoseAnim_brow_R_1_ctrl_animCache1_rotateZ";
+	rename -uid "7233B149-4C1A-4482-1ED9-AD915ECC77F6";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_brow_L_1_ctrl_animCache1_translateX";
+	rename -uid "8457EAE0-4F8F-403D-82FF-CCA3C9A47AA3";
+	setAttr ".tan" 2;
+	setAttr -s 12 ".ktv[0:11]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 38.461538265306125 -1 46.153846938775509 -1
+		 50 0;
+createNode animCurveTL -n "MG_PoseAnim_brow_L_1_ctrl_animCache1_translateY";
+	rename -uid "0A3D18DA-44AC-3E08-8D59-5DB390104518";
+	setAttr ".tan" 2;
+	setAttr -s 13 ".ktv[0:12]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 1 23.076923469387754 1
+		 26.923076530612246 1 30.76923044217687 0 34.615385204081633 0 38.461538265306125 -1
+		 46.153846938775509 -1 50 0.5;
+createNode animCurveTL -n "MG_PoseAnim_brow_L_1_ctrl_animCache1_translateZ";
+	rename -uid "C01D004F-4019-0B1A-9113-A39143EABA2B";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 46.153846938775509 0;
+createNode animCurveTA -n "MG_PoseAnim_brow_L_1_ctrl_animCache1_rotateZ";
+	rename -uid "C3BB10E7-4EE8-F50B-786A-C3AF8377EFED";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_brow_L_2_ctrl_animCache1_translateX";
+	rename -uid "AD492F1D-45FF-82A1-2B6C-24A41338928B";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_brow_L_2_ctrl_animCache1_translateY";
+	rename -uid "EE9DC50A-4978-272A-7D22-47A47B72A35A";
+	setAttr ".tan" 2;
+	setAttr -s 13 ".ktv[0:12]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 1
+		 26.923076530612246 1 30.76923044217687 0 34.615385204081633 0 38.461538265306125 -1
+		 46.153846938775509 -1 50 0.5;
+createNode animCurveTL -n "MG_PoseAnim_brow_L_2_ctrl_animCache1_translateZ";
+	rename -uid "775A9C01-406D-E58D-63C1-97882F3FE5B9";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 46.153846938775509 0;
+createNode animCurveTA -n "MG_PoseAnim_brow_L_2_ctrl_animCache1_rotateZ";
+	rename -uid "D20C69DC-468C-28A9-E92A-CA83B5ADDFDE";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_brow_L_3_ctrl_animCache1_translateX";
+	rename -uid "CF3148E6-434F-9CDE-9BC0-B4A22B4A1C51";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 4.44089209850064e-016 3.8461530612244896 4.44089209850064e-016
+		 7.6923086734693875 4.44089209850064e-016 11.538461734693877 4.44089209850064e-016
+		 15.384614795918367 4.44089209850064e-016 19.23076955782313 4.44089209850064e-016
+		 23.076923469387754 4.44089209850064e-016 26.923076530612246 4.44089209850064e-016
+		 34.615385204081633 4.44089209850064e-016 46.153846938775509 4.44089209850064e-016;
+createNode animCurveTL -n "MG_PoseAnim_brow_L_3_ctrl_animCache1_translateY";
+	rename -uid "6A1C0CBD-4EF0-03C3-7F62-BCBC45811A54";
+	setAttr ".tan" 2;
+	setAttr -s 13 ".ktv[0:12]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 1 30.76923044217687 0 34.615385204081633 0 38.461538265306125 -1
+		 46.153846938775509 -1 50 0.5;
+createNode animCurveTL -n "MG_PoseAnim_brow_L_3_ctrl_animCache1_translateZ";
+	rename -uid "73BB04EA-4851-97EA-543F-D8B619B3CD8C";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 46.153846938775509 0;
+createNode animCurveTA -n "MG_PoseAnim_brow_L_3_ctrl_animCache1_rotateZ";
+	rename -uid "2D2F9E52-49DE-0322-BC74-FBBF13E6DCE5";
+	setAttr ".tan" 2;
+	setAttr -s 10 ".ktv[0:9]"  0 0 3.8461530612244896 0 7.6923086734693875 0
+		 11.538461734693877 0 15.384614795918367 0 19.23076955782313 0 23.076923469387754 0
+		 26.923076530612246 0 34.615385204081633 0 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_eyelid_R_up_all_ctrl_animCache1_translateX";
+	rename -uid "4364620B-4BE4-72A9-7B75-DCBE0F81A1EB";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  30.76923044217687 -4.4408920985006262e-016
+		 46.153846938775509 -4.4408920985006262e-016;
+createNode animCurveTL -n "MG_PoseAnim_eyelid_R_up_all_ctrl_animCache1_translateY";
+	rename -uid "38136DB0-4ED4-88E9-9DBA-67BF6FA6F538";
+	setAttr ".tan" 2;
+	setAttr -s 5 ".ktv[0:4]"  30.76923044217687 1.7763568394002505e-015
+		 34.615385204081633 1 38.461538265306125 0.5 46.153846938775509 0.5 50 0.73427274235363194;
+createNode animCurveTA -n "MG_PoseAnim_eyelid_R_up_all_ctrl_animCache1_rotateZ";
+	rename -uid "AED24C7E-4EA8-7595-4F81-43BF039C1B0F";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  30.76923044217687 0 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_eyelid_L_up_all_ctrl_animCache1_translateX";
+	rename -uid "B1D78AB3-4125-1817-EA9E-06BD03C56D7C";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  30.76923044217687 4.4408920985006262e-016
+		 46.153846938775509 4.4408920985006262e-016;
+createNode animCurveTL -n "MG_PoseAnim_eyelid_L_up_all_ctrl_animCache1_translateY";
+	rename -uid "F76A7DFD-4438-63A3-ACCC-6DBDD0D29D14";
+	setAttr ".tan" 2;
+	setAttr -s 5 ".ktv[0:4]"  30.76923044217687 1.7763568394002505e-015
+		 34.615385204081633 1 38.461538265306125 0.5 46.153846938775509 0.5 50 0.73427274235363194;
+createNode animCurveTA -n "MG_PoseAnim_eyelid_L_up_all_ctrl_animCache1_rotateZ";
+	rename -uid "FA06D00F-4A45-E068-824A-7B8EB3547AA2";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  30.76923044217687 0 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_eyelid_R_dn_all_ctrl_animCache1_translateX";
+	rename -uid "935651F8-4338-F9C6-7D1E-0D9B8EF0647C";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  30.76923044217687 -4.4408920985006262e-016
+		 46.153846938775509 -4.4408920985006262e-016;
+createNode animCurveTL -n "MG_PoseAnim_eyelid_R_dn_all_ctrl_animCache1_translateY";
+	rename -uid "573537A4-46D7-5742-D05C-F8AA3A0E9D59";
+	setAttr ".tan" 2;
+	setAttr -s 5 ".ktv[0:4]"  30.76923044217687 0 34.615385204081633 -1
+		 38.461538265306125 -0.5 46.153846938775509 -0.5 50 -0.65265104655277384;
+createNode animCurveTA -n "MG_PoseAnim_eyelid_R_dn_all_ctrl_animCache1_rotateZ";
+	rename -uid "D9D86C72-40C2-4876-61E7-CC8664C4EF46";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  30.76923044217687 0 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_eyelid_L_dn_all_ctrl_animCache1_translateX";
+	rename -uid "0BD7DEB3-4A2F-9B5E-1918-3AB0CD0F32FC";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  30.76923044217687 4.4408920985006262e-016
+		 46.153846938775509 4.4408920985006262e-016;
+createNode animCurveTL -n "MG_PoseAnim_eyelid_L_dn_all_ctrl_animCache1_translateY";
+	rename -uid "DB0EC7B9-488E-E5AB-CECF-539B5F99836A";
+	setAttr ".tan" 2;
+	setAttr -s 5 ".ktv[0:4]"  30.76923044217687 0 34.615385204081633 -1
+		 38.461538265306125 -0.5 46.153846938775509 -0.5 50 -0.65265104655277373;
+createNode animCurveTA -n "MG_PoseAnim_eyelid_L_dn_all_ctrl_animCache1_rotateZ";
+	rename -uid "5010C61A-44AE-FB40-A562-1192BE367AAC";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  30.76923044217687 0 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_mouth_L_up_2_ctrl_animCache1_translateX";
+	rename -uid "0CC8449C-43E1-B796-5295-11BDF51F63EB";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 0
+		 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_mouth_L_up_2_ctrl_animCache1_translateY";
+	rename -uid "6F1C3896-4D91-7F9A-0EBB-D7BC9D646CC6";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 1
+		 46.153846938775509 0;
+createNode animCurveTA -n "MG_PoseAnim_mouth_L_up_2_ctrl_animCache1_rotateX";
+	rename -uid "AB7E9A1D-4CFA-4040-DEEF-A997637ECB49";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 0
+		 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_mouth_R_up_2_ctrl_animCache1_translateX";
+	rename -uid "7CD77BAE-4CF8-D461-0815-898F24B74193";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 0
+		 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_mouth_R_up_2_ctrl_animCache1_translateY";
+	rename -uid "2502F67F-436C-8D6E-DFC7-E19F71A3862F";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 1
+		 46.153846938775509 0;
+createNode animCurveTA -n "MG_PoseAnim_mouth_R_up_2_ctrl_animCache1_rotateX";
+	rename -uid "77AB5F9A-4749-C4BE-9D09-0999D41A8389";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 0
+		 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_mouth_R_dn_2_ctrl_animCache1_translateX";
+	rename -uid "0D55190B-4125-CCA1-83E9-15AE21861F87";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 0
+		 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_mouth_R_dn_2_ctrl_animCache1_translateY";
+	rename -uid "1F0B5F58-4580-21B1-4CB4-AA819FE7EC20";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 -1
+		 46.153846938775509 0;
+createNode animCurveTA -n "MG_PoseAnim_mouth_R_dn_2_ctrl_animCache1_rotateX";
+	rename -uid "AB7AF1DA-463E-DB85-DD2D-118DC311DBE1";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 0
+		 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_mouth_L_dn_2_ctrl_animCache1_translateX";
+	rename -uid "F8B756A3-4C5A-45B5-BA35-7D8FE17DE2D4";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 0
+		 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_mouth_L_dn_2_ctrl_animCache1_translateY";
+	rename -uid "203B2F61-4060-8416-9634-35991690AECF";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 -1
+		 46.153846938775509 0;
+createNode animCurveTA -n "MG_PoseAnim_mouth_L_dn_2_ctrl_animCache1_rotateX";
+	rename -uid "9D1EBA94-4A28-5F02-80C3-B9B5C023ED2E";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 0
+		 46.153846938775509 0;
+createNode animCurveTL -n "MG_PoseAnim_mouth_L_1_ctrl_animCache1_translateX";
+	rename -uid "8FF3C156-406C-9A62-03F8-FA9236F84C6D";
+	setAttr ".tan" 2;
+	setAttr -s 4 ".ktv[0:3]"  38.461538265306125 0 42.307691326530609 1
+		 46.153846938775509 0 50 1;
+createNode animCurveTL -n "MG_PoseAnim_mouth_L_1_ctrl_animCache1_translateY";
+	rename -uid "33E4C6DA-4131-E324-7B95-6285AE1A9D54";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 0
+		 50 1;
+createNode animCurveTA -n "MG_PoseAnim_mouth_L_1_ctrl_animCache1_rotateX";
+	rename -uid "157481B1-493F-DE65-C614-EB8C89D1FF20";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  38.461538265306125 0 42.307691326530609 0;
+createNode animCurveTL -n "MG_PoseAnim_mouth_R_1_ctrl_animCache1_translateX";
+	rename -uid "33725432-4E08-73B7-1FA9-1B997F2BA0EC";
+	setAttr ".tan" 2;
+	setAttr -s 4 ".ktv[0:3]"  38.461538265306125 0 42.307691326530609 1
+		 46.153846938775509 0 50 1;
+createNode animCurveTL -n "MG_PoseAnim_mouth_R_1_ctrl_animCache1_translateY";
+	rename -uid "CEAA3C4C-4F5F-97FC-6D20-37A912C9F897";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 0
+		 50 1;
+createNode animCurveTA -n "MG_PoseAnim_mouth_R_1_ctrl_animCache1_rotateX";
+	rename -uid "D469F5BA-4AA6-BCD1-B2B1-EBBBFAB150AF";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  38.461538265306125 0 42.307691326530609 0;
+createNode animCurveTL -n "MG_PoseAnim_jaw_M_open_ctrl_animCache1_translateX";
+	rename -uid "94409279-422B-804C-4AB8-02993EF1C7D0";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  38.461538265306125 0 42.307691326530609 0;
+createNode animCurveTL -n "MG_PoseAnim_jaw_M_open_ctrl_animCache1_translateY";
+	rename -uid "F3FF16B0-47BF-34E0-765F-6FBC9C5FF3D0";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  38.461538265306125 0 42.307691326530609 0;
+createNode animCurveTL -n "MG_PoseAnim_jaw_M_open_ctrl_animCache1_translateZ";
+	rename -uid "117BA9F7-4294-B12C-9240-1495A9A7FB08";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  38.461538265306125 0 42.307691326530609 0;
+createNode animCurveTA -n "MG_PoseAnim_jaw_M_open_ctrl_animCache1_rotateX";
+	rename -uid "7D3C6ADD-4212-7C37-758A-FDA88DC59261";
+	setAttr ".tan" 2;
+	setAttr -s 4 ".ktv[0:3]"  38.461538265306125 0 42.307691326530609 0
+		 46.153846938775509 25 50 14.999999999999998;
+createNode animCurveTA -n "MG_PoseAnim_jaw_M_open_ctrl_animCache1_rotateY";
+	rename -uid "148F2156-4E53-A79E-6FD8-7C8F2509D172";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 0
+		 50 -2;
+createNode animCurveTA -n "MG_PoseAnim_jaw_M_open_ctrl_animCache1_rotateZ";
+	rename -uid "9233B99B-4F9A-1C96-6D91-EDA121229189";
+	setAttr ".tan" 2;
+	setAttr -s 3 ".ktv[0:2]"  38.461538265306125 0 42.307691326530609 0
+		 50 10;
+createNode animCurveTU -n "MG_PoseAnim_jaw_M_open_ctrl_animCache1_scaleX";
+	rename -uid "49A6BEB4-4DB1-ACA9-2D18-06BD5CDE4CE8";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  38.461538265306125 1 42.307691326530609 1;
+createNode animCurveTU -n "MG_PoseAnim_jaw_M_open_ctrl_animCache1_scaleY";
+	rename -uid "F7D13929-4BA1-A6E5-269E-3187D8AB209F";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  38.461538265306125 1 42.307691326530609 1;
+createNode animCurveTU -n "MG_PoseAnim_jaw_M_open_ctrl_animCache1_scaleZ";
+	rename -uid "846C34F4-48F4-F862-BBDD-4F9BB24DC562";
+	setAttr ".tan" 2;
+	setAttr -s 2 ".ktv[0:1]"  38.461538265306125 1 42.307691326530609 1;
+select -ne :time1;
+	setAttr -av -k on ".cch";
+	setAttr -av -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k on ".fzn";
+	setAttr -k on ".o" 0;
+	setAttr -av -k on ".unw";
+	setAttr -av -k on ".etw";
+	setAttr -av -k on ".tps";
+	setAttr -av -k on ".tms";
+select -ne :hardwareRenderingGlobals;
+	setAttr -av -k on ".ihi";
+	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
+	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
+		 1 1 1 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 ;
+	setAttr -av ".ta";
+	setAttr -av ".tq";
+	setAttr -av ".aoam";
+	setAttr -av ".aora";
+	setAttr -av ".hfd";
+	setAttr -av ".hfs";
+	setAttr -av ".hfe";
+	setAttr -av ".hfcr";
+	setAttr -av ".hfcg";
+	setAttr -av ".hfcb";
+	setAttr -av ".hfa";
+	setAttr -av ".mbe";
+	setAttr -av -k on ".mbsof";
+	setAttr ".fprt" yes;
+select -ne :renderPartition;
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -s 11 ".st";
+	setAttr -cb on ".an";
+	setAttr -cb on ".pt";
+select -ne :renderGlobalsList1;
+	setAttr -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -cb on ".bnm";
+select -ne :defaultShaderList1;
+	setAttr -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -s 13 ".s";
+select -ne :postProcessList1;
+	setAttr -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -s 2 ".p";
+select -ne :defaultRenderingList1;
+	setAttr -k on ".ihi";
+	setAttr -s 3498 ".r";
+select -ne :initialShadingGroup;
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k on ".fzn";
+	setAttr -k on ".bbx";
+	setAttr -k on ".vwm";
+	setAttr -k on ".tpv";
+	setAttr -k on ".uit";
+	setAttr -s 17 ".dsm";
+	setAttr -k on ".mwc";
+	setAttr -cb on ".an";
+	setAttr -cb on ".il";
+	setAttr -cb on ".vo";
+	setAttr -cb on ".eo";
+	setAttr -cb on ".fo";
+	setAttr -cb on ".epo";
+	setAttr -k on ".ro" yes;
+	setAttr -s 46656 ".gn";
+select -ne :initialParticleSE;
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k on ".mwc";
+	setAttr -cb on ".an";
+	setAttr -cb on ".il";
+	setAttr -cb on ".vo";
+	setAttr -cb on ".eo";
+	setAttr -cb on ".fo";
+	setAttr -cb on ".epo";
+	setAttr -k on ".ro" yes;
+select -ne :defaultResolution;
+	setAttr -av -k on ".cch";
+	setAttr -av -k on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -k on ".bnm";
+	setAttr -av -k on ".w";
+	setAttr -av -k on ".h";
+	setAttr -av -k on ".pa" 1;
+	setAttr -av -k on ".al";
+	setAttr -av -k on ".dar";
+	setAttr -av -k on ".ldar";
+	setAttr -av -k on ".dpi";
+	setAttr -av -k on ".off";
+	setAttr -av -k on ".fld";
+	setAttr -av -k on ".zsl";
+	setAttr -av -k on ".isu";
+	setAttr -av -k on ".pdu";
+select -ne :hardwareRenderGlobals;
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k off -cb on ".ctrs" 256;
+	setAttr -av -k off -cb on ".btrs" 512;
+	setAttr -k off -cb on ".fbfm";
+	setAttr -k off -cb on ".ehql";
+	setAttr -k off -cb on ".eams";
+	setAttr -k off -cb on ".eeaa";
+	setAttr -k off -cb on ".engm";
+	setAttr -k off -cb on ".mes";
+	setAttr -k off -cb on ".emb";
+	setAttr -av -k off -cb on ".mbbf";
+	setAttr -k off -cb on ".mbs";
+	setAttr -k off -cb on ".trm";
+	setAttr -k off -cb on ".tshc";
+	setAttr -k off -cb on ".enpt";
+	setAttr -k off -cb on ".clmt";
+	setAttr -k off -cb on ".tcov";
+	setAttr -k off -cb on ".lith";
+	setAttr -k off -cb on ".sobc";
+	setAttr -k off -cb on ".cuth";
+	setAttr -k off -cb on ".hgcd";
+	setAttr -k off -cb on ".hgci";
+	setAttr -k off -cb on ".mgcs";
+	setAttr -k off -cb on ".twa";
+	setAttr -k off -cb on ".twz";
+	setAttr -k on ".hwcc";
+	setAttr -k on ".hwdp";
+	setAttr -k on ".hwql";
+	setAttr -k on ".hwfr";
+	setAttr -k on ".soll";
+	setAttr -k on ".sosl";
+	setAttr -k on ".bswa";
+	setAttr -k on ".shml";
+	setAttr -k on ".hwel";
+select -ne :ikSystem;
+	setAttr -k on ".cch";
+	setAttr -k on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -k on ".bnm";
+	setAttr -av -k on ".gsn";
+	setAttr -k on ".gsv";
+connectAttr "MG_PoseAnim_brow_R_3_ctrl_animCache1_translateX.o" "MG_PoseAnim_brow_R_3_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_brow_R_3_ctrl_animCache1_translateY.o" "MG_PoseAnim_brow_R_3_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_brow_R_3_ctrl_animCache1_translateZ.o" "MG_PoseAnim_brow_R_3_ctrl_animCache1.tz"
+		;
+connectAttr "MG_PoseAnim_brow_R_3_ctrl_animCache1_rotateZ.o" "MG_PoseAnim_brow_R_3_ctrl_animCache1.rz"
+		;
+connectAttr "MG_PoseAnim_brow_R_2_ctrl_animCache1_translateX.o" "MG_PoseAnim_brow_R_2_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_brow_R_2_ctrl_animCache1_translateY.o" "MG_PoseAnim_brow_R_2_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_brow_R_2_ctrl_animCache1_translateZ.o" "MG_PoseAnim_brow_R_2_ctrl_animCache1.tz"
+		;
+connectAttr "MG_PoseAnim_brow_R_2_ctrl_animCache1_rotateZ.o" "MG_PoseAnim_brow_R_2_ctrl_animCache1.rz"
+		;
+connectAttr "MG_PoseAnim_brow_R_1_ctrl_animCache1_translateX.o" "MG_PoseAnim_brow_R_1_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_brow_R_1_ctrl_animCache1_translateY.o" "MG_PoseAnim_brow_R_1_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_brow_R_1_ctrl_animCache1_translateZ.o" "MG_PoseAnim_brow_R_1_ctrl_animCache1.tz"
+		;
+connectAttr "MG_PoseAnim_brow_R_1_ctrl_animCache1_rotateZ.o" "MG_PoseAnim_brow_R_1_ctrl_animCache1.rz"
+		;
+connectAttr "MG_PoseAnim_brow_L_1_ctrl_animCache1_translateX.o" "MG_PoseAnim_brow_L_1_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_brow_L_1_ctrl_animCache1_translateY.o" "MG_PoseAnim_brow_L_1_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_brow_L_1_ctrl_animCache1_translateZ.o" "MG_PoseAnim_brow_L_1_ctrl_animCache1.tz"
+		;
+connectAttr "MG_PoseAnim_brow_L_1_ctrl_animCache1_rotateZ.o" "MG_PoseAnim_brow_L_1_ctrl_animCache1.rz"
+		;
+connectAttr "MG_PoseAnim_brow_L_2_ctrl_animCache1_translateX.o" "MG_PoseAnim_brow_L_2_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_brow_L_2_ctrl_animCache1_translateY.o" "MG_PoseAnim_brow_L_2_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_brow_L_2_ctrl_animCache1_translateZ.o" "MG_PoseAnim_brow_L_2_ctrl_animCache1.tz"
+		;
+connectAttr "MG_PoseAnim_brow_L_2_ctrl_animCache1_rotateZ.o" "MG_PoseAnim_brow_L_2_ctrl_animCache1.rz"
+		;
+connectAttr "MG_PoseAnim_brow_L_3_ctrl_animCache1_translateX.o" "MG_PoseAnim_brow_L_3_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_brow_L_3_ctrl_animCache1_translateY.o" "MG_PoseAnim_brow_L_3_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_brow_L_3_ctrl_animCache1_translateZ.o" "MG_PoseAnim_brow_L_3_ctrl_animCache1.tz"
+		;
+connectAttr "MG_PoseAnim_brow_L_3_ctrl_animCache1_rotateZ.o" "MG_PoseAnim_brow_L_3_ctrl_animCache1.rz"
+		;
+connectAttr "MG_PoseAnim_eyelid_R_up_all_ctrl_animCache1_translateX.o" "MG_PoseAnim_eyelid_R_up_all_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_eyelid_R_up_all_ctrl_animCache1_translateY.o" "MG_PoseAnim_eyelid_R_up_all_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_eyelid_R_up_all_ctrl_animCache1_rotateZ.o" "MG_PoseAnim_eyelid_R_up_all_ctrl_animCache1.rz"
+		;
+connectAttr "MG_PoseAnim_eyelid_L_up_all_ctrl_animCache1_translateX.o" "MG_PoseAnim_eyelid_L_up_all_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_eyelid_L_up_all_ctrl_animCache1_translateY.o" "MG_PoseAnim_eyelid_L_up_all_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_eyelid_L_up_all_ctrl_animCache1_rotateZ.o" "MG_PoseAnim_eyelid_L_up_all_ctrl_animCache1.rz"
+		;
+connectAttr "MG_PoseAnim_eyelid_R_dn_all_ctrl_animCache1_translateX.o" "MG_PoseAnim_eyelid_R_dn_all_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_eyelid_R_dn_all_ctrl_animCache1_translateY.o" "MG_PoseAnim_eyelid_R_dn_all_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_eyelid_R_dn_all_ctrl_animCache1_rotateZ.o" "MG_PoseAnim_eyelid_R_dn_all_ctrl_animCache1.rz"
+		;
+connectAttr "MG_PoseAnim_eyelid_L_dn_all_ctrl_animCache1_translateX.o" "MG_PoseAnim_eyelid_L_dn_all_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_eyelid_L_dn_all_ctrl_animCache1_translateY.o" "MG_PoseAnim_eyelid_L_dn_all_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_eyelid_L_dn_all_ctrl_animCache1_rotateZ.o" "MG_PoseAnim_eyelid_L_dn_all_ctrl_animCache1.rz"
+		;
+connectAttr "MG_PoseAnim_mouth_L_up_2_ctrl_animCache1_translateX.o" "MG_PoseAnim_mouth_L_up_2_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_mouth_L_up_2_ctrl_animCache1_translateY.o" "MG_PoseAnim_mouth_L_up_2_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_mouth_L_up_2_ctrl_animCache1_rotateX.o" "MG_PoseAnim_mouth_L_up_2_ctrl_animCache1.rx"
+		;
+connectAttr "MG_PoseAnim_mouth_R_up_2_ctrl_animCache1_translateX.o" "MG_PoseAnim_mouth_R_up_2_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_mouth_R_up_2_ctrl_animCache1_translateY.o" "MG_PoseAnim_mouth_R_up_2_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_mouth_R_up_2_ctrl_animCache1_rotateX.o" "MG_PoseAnim_mouth_R_up_2_ctrl_animCache1.rx"
+		;
+connectAttr "MG_PoseAnim_mouth_R_dn_2_ctrl_animCache1_translateX.o" "MG_PoseAnim_mouth_R_dn_2_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_mouth_R_dn_2_ctrl_animCache1_translateY.o" "MG_PoseAnim_mouth_R_dn_2_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_mouth_R_dn_2_ctrl_animCache1_rotateX.o" "MG_PoseAnim_mouth_R_dn_2_ctrl_animCache1.rx"
+		;
+connectAttr "MG_PoseAnim_mouth_L_dn_2_ctrl_animCache1_translateX.o" "MG_PoseAnim_mouth_L_dn_2_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_mouth_L_dn_2_ctrl_animCache1_translateY.o" "MG_PoseAnim_mouth_L_dn_2_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_mouth_L_dn_2_ctrl_animCache1_rotateX.o" "MG_PoseAnim_mouth_L_dn_2_ctrl_animCache1.rx"
+		;
+connectAttr "MG_PoseAnim_mouth_L_1_ctrl_animCache1_translateX.o" "MG_PoseAnim_mouth_L_1_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_mouth_L_1_ctrl_animCache1_translateY.o" "MG_PoseAnim_mouth_L_1_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_mouth_L_1_ctrl_animCache1_rotateX.o" "MG_PoseAnim_mouth_L_1_ctrl_animCache1.rx"
+		;
+connectAttr "MG_PoseAnim_mouth_R_1_ctrl_animCache1_translateX.o" "MG_PoseAnim_mouth_R_1_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_mouth_R_1_ctrl_animCache1_translateY.o" "MG_PoseAnim_mouth_R_1_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_mouth_R_1_ctrl_animCache1_rotateX.o" "MG_PoseAnim_mouth_R_1_ctrl_animCache1.rx"
+		;
+connectAttr "MG_PoseAnim_jaw_M_open_ctrl_animCache1_translateX.o" "MG_PoseAnim_jaw_M_open_ctrl_animCache1.tx"
+		;
+connectAttr "MG_PoseAnim_jaw_M_open_ctrl_animCache1_translateY.o" "MG_PoseAnim_jaw_M_open_ctrl_animCache1.ty"
+		;
+connectAttr "MG_PoseAnim_jaw_M_open_ctrl_animCache1_translateZ.o" "MG_PoseAnim_jaw_M_open_ctrl_animCache1.tz"
+		;
+connectAttr "MG_PoseAnim_jaw_M_open_ctrl_animCache1_rotateX.o" "MG_PoseAnim_jaw_M_open_ctrl_animCache1.rx"
+		;
+connectAttr "MG_PoseAnim_jaw_M_open_ctrl_animCache1_rotateY.o" "MG_PoseAnim_jaw_M_open_ctrl_animCache1.ry"
+		;
+connectAttr "MG_PoseAnim_jaw_M_open_ctrl_animCache1_rotateZ.o" "MG_PoseAnim_jaw_M_open_ctrl_animCache1.rz"
+		;
+connectAttr "MG_PoseAnim_jaw_M_open_ctrl_animCache1_scaleX.o" "MG_PoseAnim_jaw_M_open_ctrl_animCache1.sx"
+		;
+connectAttr "MG_PoseAnim_jaw_M_open_ctrl_animCache1_scaleY.o" "MG_PoseAnim_jaw_M_open_ctrl_animCache1.sy"
+		;
+connectAttr "MG_PoseAnim_jaw_M_open_ctrl_animCache1_scaleZ.o" "MG_PoseAnim_jaw_M_open_ctrl_animCache1.sz"
+		;
+dataStructure -fmt "raw" -as "name=mapManager_grass_c_geo1:string=value";
+dataStructure -fmt "raw" -as "name=notes_decayLeaves_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_juneBackYard:string=value";
+dataStructure -fmt "raw" -as "name=notes_trees_left1:string=value";
+dataStructure -fmt "raw" -as "name=notes_baseLeaves:string=value";
+dataStructure -fmt "raw" -as "name=notes_degraded:string=value";
+dataStructure -fmt "raw" -as "name=notes_widlPatchB_parShape:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_snapshot_floor:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_ground_c_geo:string=value";
+dataStructure -fmt "raw" -as "name=notes_groundC_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_suelo:string=value";
+dataStructure -fmt "raw" -as "name=notes_groundD_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_pPlane2:string=value";
+dataStructure -fmt "raw" -as "name=notes_pPlane4:string=value";
+dataStructure -fmt "raw" -as "name=notes_decayGrassPatchA_parShape:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_grassBase:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_pPlane6:string=value";
+dataStructure -fmt "raw" -as "name=notes_slopesGroundGrassD_Combined:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_baseScatter:string=value";
+dataStructure -fmt "raw" -as "name=notes_wildPatchH_parShape:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_trees_left:string=value";
+dataStructure -fmt "raw" -as "name=notes_slopesGroundGrassA_Combined:string=value";
+dataStructure -fmt "raw" -as "name=notes_base_hojas:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_base_left:string=value";
+dataStructure -fmt "raw" -as "name=notes_slopes_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_left_parShape:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_juneBackYard:string=value";
+dataStructure -fmt "raw" -as "name=notes_grassJuneBackYard_parShape:string=value";
+dataStructure -fmt "raw" -as "name=idStructure:int32=ID";
+dataStructure -fmt "raw" -as "name=notes_decayLeavesCarousel_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_pPlane3:string=value";
+dataStructure -fmt "raw" -as "name=notes_slopesGroundGrassB_Combined:string=value";
+dataStructure -fmt "raw" -as "name=notes_base_right:string=value";
+dataStructure -fmt "raw" -as "name=notes_snapshot_Combined:string=value";
+dataStructure -fmt "raw" -as "name=notes_baseScatt:string=value";
+dataStructure -fmt "raw" -as "name=notes_ground_c_geo:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_snapshot_Combined:string=value";
+dataStructure -fmt "raw" -as "name=faceConnectOutputStructure:bool=faceConnectOutput:string[200]=faceConnectOutputAttributes:string[200]=faceConnectOutputGroups";
+dataStructure -fmt "raw" -as "name=mapManager_pPlane3:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_pPlane1:string=value";
+dataStructure -fmt "raw" -as "name=notes_slopesGroundGrassC_Combined:string=value";
+dataStructure -fmt "raw" -as "name=notes_trees_parShape:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_pPlane2:string=value";
+dataStructure -fmt "raw" -as "name=notes_grass_c_geo:string=value";
+dataStructure -fmt "raw" -as "name=notes_mountains_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_pPlane5:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_slopesGroundGrassA_Combined:string=value";
+dataStructure -fmt "raw" -as "name=notes_right_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_baseScatter:string=value";
+dataStructure -fmt "raw" -as "name=notes_groundB_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_grass_c_geo1:string=value";
+dataStructure -fmt "raw" -as "name=notes_wildPatchG_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_pPlane6:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_suelo:string=value";
+dataStructure -fmt "raw" -as "name=notes_wildPatchD_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_polySurface56:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_slopesGroundGrassD_Combined:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_slopesGroundGrassC_Combined:string=value";
+dataStructure -fmt "raw" -as "name=notes_ferns_parShape:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_pPlane5:string=value";
+dataStructure -fmt "raw" -as "name=notes_snapshot_CombinedGrass:string=value";
+dataStructure -fmt "raw" -as "name=notes_decayGrassesCenter_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_groundWoods_c_geo1:string=value";
+dataStructure -fmt "raw" -as "name=notes_bushes_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_groundA_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_base_left:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_snapshot_CombinedGrass:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_slopesMountainsGrass_Combined:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_baseLeaves:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_base_hojas:string=value";
+dataStructure -fmt "raw" -as "name=notes_snapshot_floor:string=value";
+dataStructure -fmt "raw" -as "name=notes_trees_left:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_slopesGroundGrassB_Combined:string=value";
+dataStructure -fmt "raw" -as "name=notes_decayGrassPatchD_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_floorOrangeConcrete_c_geo:string=value";
+dataStructure -fmt "raw" -as "name=notes_pPlane1:string=value";
+dataStructure -fmt "raw" -as "name=faceConnectMarkerStructure:bool=faceConnectMarker:string[200]=faceConnectOutputGroups";
+dataStructure -fmt "raw" -as "name=notes_wildPatchF_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_decayGrassPatchC_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_slopesMountainsGrass_Combined:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_trees_left1:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_floorOrangeConcrete_c_geo:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_ground:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_groundWoods_c_geo1:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_grass_c_geo:string=value";
+dataStructure -fmt "raw" -as "name=notes_ground:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_polySurface56:string=value";
+dataStructure -fmt "raw" -as "name=notes_wildPatchA_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_wildPatchE_parShape:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_base_right:string=value";
+dataStructure -fmt "raw" -as "name=notes_wildPatchC_parShape:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_degraded:string=value";
+dataStructure -fmt "raw" -as "name=notes_grassBase:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_pPlane4:string=value";
+dataStructure -fmt "raw" -as "name=notes_wildPatchDegraded_parShape:string=value";
+dataStructure -fmt "raw" -as "name=notes_decayGrassPatchB_parShape:string=value";
+dataStructure -fmt "raw" -as "name=mapManager_baseScatt:string=value";
+// End of MG_PoseAnim_AnimCache.ma

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+    </check_group>
+    <check_group name="Hyper Loop">
+        <check type="mod_asb" name="hyperloop_xml" allow_skip="false"/>
+        <check type="mod_asb" name="hyperloop_asset_v" allow_skip="false"/>
+        <check type="mod_asb" name="hyperloop_color_id" allow_skip="false"/>
+        <check type="mod_asb" name="hyperloop_mod_task" allow_skip="false"/>
+    </check_group>
+</root>
+

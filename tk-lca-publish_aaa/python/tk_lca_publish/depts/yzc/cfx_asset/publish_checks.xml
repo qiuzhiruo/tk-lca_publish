@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+    </check_group>
+    <check_group name="CFX Asset Checks">
+        <check type="gen" name="check_asset_master" allow_skip="false"/>
+        <check type="cfx" name="check_reference" allow_skip="true"/>
+        <check type="cfx" name="check_hierarchy" allow_skip="false"/>
+        <check type="cfx" name="check_sets_name" allow_skip="false"/>
+        <check type="gen" name="check_extra_namespace" allow_skip="false"/>
+        <check type="gen" name="match_hierarchy" allow_skip="true"/>
+        <check type="gen" name="working_units" allow_skip="false"/>
+    </check_group>
+    <check_group name="CFX Hair Checks">
+        <check type="cfx" name="check_render_set" allow_skip="false"/>
+        <check type="cfx" name="check_asset_yeti_texture" allow_skip="false"/>
+        <check type="cfx" name="check_user_attributes_prefix" allow_skip="false"/>
+    </check_group>
+</root>
+

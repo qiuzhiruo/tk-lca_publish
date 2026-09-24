@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<root>
+    <process type="gen" name="save_scene" mode="downstream"/>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="mod" name="combine_set" mode="downstream"/>
+    <process type="mod" name="clean_mod_files" mode="downstream"/>
+    <process type="gen" name="maya_version_attr" mode="downstream"/>
+    <process type="mod" name="model_mesh_xml" mode="downstream"/>
+    <process type="gen" name="apply_latest_uv" mode="downstream"/>
+    <process type="mod" name="auto_proxy" mode="downstream"/>
+    <process type="mod" name="mesh_count" mode="downstream"/>
+    <process type="mod" name="display_smoothness" mode="downstream"/>
+    <process type="mod" name="convert_hair_patch" mode="downstream"/>
+    <process type="gen" name="asset_scene_graph_xml" mode="downstream"/>
+    <process type="mod" name="publish_mod_files" mode="downstream"/>
+    <process type="mod" name="publish_dynamic_files" mode="downstream"/>
+    <process type="mod" name="gpu_cache" mode="downstream"/>
+    <process type="mod" name="color_id_cache" mode="downstream"/>
+    <process type="mod" name="delete_auto_proxy" mode="downstream"/>
+    <process type="gen" name="restore_original_shader" mode="downstream"/>
+    <process type="mod" name="clean_normals" mode="downstream"/>
+    <process type="mod" name="model_shader_xml" mode="downstream"/>
+    <process type="gen" name="create_thumbnails" mode="daily"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <process type="gen" name="register_publish" mode="downstream"/>
+    <!-- <process type="gen" name="write_wulala_info" mode="downstream"/> -->
+    <process type="yzc" name="approve_version" mode="downstream"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+    <process type="mod" name="lock_transform" mode="downstream"/>
+    <process type="gen" name="save_scene" mode="downstream"/>
+
+</root>
+

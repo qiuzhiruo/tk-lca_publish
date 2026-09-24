@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="version_match" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+    </check_group>
+    <check_group name="Assembly">
+        <check type="gen" name="working_units" allow_skip="false"/>
+        <check type="mod_assembly" name="no_root_master" allow_skip="false"/>
+        <check type="mod_assembly" name="check_picked_asset" allow_skip="false"/>
+        <check type="mod_assembly" name="check_unique_name" allow_skip="false"/>
+        <check type="mod_assembly" name="check_chinese_char" allow_skip="false"/>
+<!--        <check type="mod_assembly" name="set_asset_transform" allow_skip="true"/>-->
+        <check type="mod_assembly" name="sub_asset_version" allow_skip="false"/>
+        <check type="mod_assembly" name="downstream_versions" allow_skip="true"/>
+    </check_group>
+    <check_group name="Naming Convention">
+        <check type="mod_assembly" name="check_hierarchy" allow_skip="false"/>
+        <check type="mod" name="no_instanced_node" allow_skip="false"/>
+        <check type="mod" name="mesh_name" allow_skip="false"/>
+        <check type="mod" name="no_standalone_group" allow_skip="false"/>
+        <check type="mod" name="no_empty_mesh" allow_skip="false"/>
+<!--        <check type="mod" name="no_empty_trans" allow_skip="false"/>-->
+        <check type="gen" name="check_extra_namespace" allow_skip="false"/>
+        <check type="mod" name="one_shader_per_obj" allow_skip="true"/>
+        <check type="mod" name="unknown_nodes" allow_skip="false"/>
+        <check type="mod" name="check_layer" allow_skip="false"/>
+    </check_group>
+    <check_group name="Modeling and Topology">
+        <check type="mod" name="mesh_control" allow_skip="false"/>
+        <check type="mod_assembly" name="character_shaders" allow_skip="false"/>
+        <check type="mod" name="pivot_on_orgion" allow_skip="false"/>
+        <check type="mod" name="extremely_short_edge" allow_skip="false"/>
+        <check type="mod" name="nonmanifold_face" allow_skip="false"/>
+        <check type="mod" name="uv_holes" allow_skip="false"/>
+        <check type="mod" name="exceed_range_uv" allow_skip="false"/>
+        <check type="mod" name="vertex_isolated" allow_skip="false"/>
+        <check type="mod" name="vertex_overlap" allow_skip="true"/>
+        <check type="mod_assembly" name="reselect_assets" allow_skip="false"/>
+    </check_group>
+</root>
+

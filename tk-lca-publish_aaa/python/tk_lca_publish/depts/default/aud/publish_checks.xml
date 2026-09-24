@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+        <check type="gen" name="check_shot_task_existance" allow_skip="false"/>
+    </check_group>
+    <check_group name="Generic Naming Convention">
+        <check type="aud" name="audio_file_name" allow_skip="false"/>
+        <check type="aud" name="check_xml_file" allow_skip="true"/>
+        <check type="aud" name="check_wav_shot" allow_skip="false"/>
+        <check type="aud" name="tech_summary" allow_skip="true"/>
+        <check type="aud" name="compare_wav_xml" allow_skip="true"/>
+    </check_group>
+    <check_group name="Generic Audio Setting">
+        <check type="aud" name="audio_sampling_frequency" allow_skip="true"/>
+        <check type="aud" name="check_wav_overlap" allow_skip="true"/>
+    </check_group>
+</root>
+

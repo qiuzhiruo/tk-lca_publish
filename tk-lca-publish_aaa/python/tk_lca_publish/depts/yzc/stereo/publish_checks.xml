@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="stereo" name="check_task" allow_skip="false"/>
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="version_match" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+        <check type="gen" name="mov_file_source" allow_skip="false"/>
+        <check type="gen" name="mov_file_range" allow_skip="false"/>
+    </check_group>
+    <check_group name="Layout Checks 1">
+        <check type="gen" name="check_shot_frange" allow_skip="false"/>
+        <check type="gen" name="check_hierarchy" allow_skip="true"/>
+        <check type="lay" name="check_import_assets" allow_skip="false"/>
+        <check type="lay" name="check_assets_ref" allow_skip="false"/>
+        <check type="lay" name="check_omit_assets" allow_skip="false"/>
+        <check type="lay" name="check_camera_solid" allow_skip="true"/>
+    </check_group>
+    <check_group name="Layout Checks 2">
+        <check type="lay" name="check_ref_name_space" allow_skip="false"/>
+        <check type="gen" name="reference_withoutCopyNumber" allow_skip="false"/>
+        <check type="gen" name="assets_path_check" allow_skip="false"/>
+        <check type="gen" name="empty_reference_node" allow_skip="true"/>
+        <check type="gen" name="exclusive_names" allow_skip="false"/>
+        <check type="flo" name="check_layout_rig" allow_skip="false"/>
+    </check_group>
+</root>
+

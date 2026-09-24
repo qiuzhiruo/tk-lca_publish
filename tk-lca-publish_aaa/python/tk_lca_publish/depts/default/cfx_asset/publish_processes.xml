@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<root>
+<!--    <process type="cfx" name="remove_useless_ptx" mode="downstream"/>-->
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="cfx" name="asset_yeti_texture" mode="downstream"/>
+    <process type="cfx" name="asset_yeti_lod" mode="downstream"/>
+    <process type="cfx" name="asset_yeti_cache" mode="downstream"/>
+    <process type="gen" name="publish_maya_texture_file" mode="downstream"/>
+    <process type="cfx" name="asset_xgen_file" mode="downstream"/>
+    <process type="cfx" name="asset_hair_info_xml" mode="downstream"/>
+    <process type="cfx" name="asset_ma_file" mode="downstream"/>
+    <process type="cfx" name="asset_xgen_restore" mode="downstream"/>
+    <process type="cfx" name="export_xgen_attr" mode="downstream"/>
+    <process type="cfx" name="export_xgen_guides" mode="downstream"/>
+    <process type="cfx" name="do_build_with_xiaovf" mode="downstream"/>
+    <process type="cfx" name="replace_xgen_textures_path" mode="downstream"/>
+    <process type="cfx" name="export_xgen_feather_info" mode="downstream"/>
+<!--    <process type="cfx" name="export_xgen_curves" mode="downstream"/>-->
+<!--     <process type="cfx" name="export_xgen_data" mode="downstream"/>
+    <process type="cfx" name="asset_ma_file_new" mode="downstream"/>
+ -->
+    <process type="gen" name="asset_scene_graph_xml" mode="downstream"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <process type="gen" name="register_publish" mode="downstream"/>
+    <process type="cfx" name="cfx_asset_usd_farm" mode="downstream"/>
+    <process type="gen" name="approve_version" mode="downstream"/>
+    <process type="cfx" name="asset_compear_path" mode="downstream"/>
+    <process type="cfx" name="export_render_data" mode="downstream"/>
+    <process type="gen" name="sg_version_note" mode="downstream"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+</root>

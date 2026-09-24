@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="version_match" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+    </check_group>
+    <check_group name="Dmt Specific Rule">
+        <check type="dmt" name="check_img_path" allow_skip="false"/>
+        <check type="dmt" name="check_img_type" allow_skip="false"/>
+        <check type="dmt" name="valid_group_name" allow_skip="false"/>
+        <check type="dmt" name="check_camera_path" allow_skip="false"/>
+        <check type="dmt" name="check_project_cam" allow_skip="true"/>
+        <check type="dmt" name="check_img_nan" allow_skip="true"/>
+    </check_group>
+</root>
+

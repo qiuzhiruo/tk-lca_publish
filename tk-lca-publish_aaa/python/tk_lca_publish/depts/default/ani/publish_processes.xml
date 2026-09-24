@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<root>
+    <process type="ani" name="ani_publish_begin_set" mode="daily"/>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <!--<process type="lay" name="clean_scenes" mode="daily"/>-->
+    <process type="ani" name="set_render_stat" mode="checked"/>
+    <process type="ani" name="clean_isolated_curves" mode="checked"/>
+    <!--    <process type="ani" name="switch_muggle_to_ani" mode="checked"/>-->
+    <process type="ani" name="pass_lock" mode="downstream"/>
+    <process type="ani" name="facial_tex_vis_check" mode="checked"/>
+    <process type="ani" name="ani_by_shot_cache" mode="downstream"/>
+    <!--    <process type="ani" name="add_rra_cycle_tag" mode="checked"/>-->
+    <!--        <process type="ani" name="expand_asb" mode="checked"/>-->
+    <!--    <process type="ani" name="search_gas_assets" mode="downstream"/>-->
+    <process type="ani" name="save_scenes" mode="checked"/>
+    <process type="flo" name="record_shot_ar_status" mode="checked"/>
+    <process type="ani" name="export_to_lgt" mode="checked"/>
+    <process type="flo" name="set_stereo_status" mode="downstream"/>
+    <process type="gen" name="maya_version_attr" mode="checked"/>
+    <!--    <process type="lay" name="lay_scene_graph_xml" mode="checked"/>-->
+
+    <process type="ani" name="list_ani_assets" mode="checked"/>
+    <process type="lay" name="export_cam" mode="daily"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+<!--    <process type="ani" name="submit_cycle_export_assets" mode="downstream"/>-->
+<!--    <process type="lay" name="new_lay_scene_graph_xml" mode="checked"/>-->
+    <process type="gen" name="refresh_sequence_playlist" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <process type="gen" name="register_camera" mode="checked"/>
+    <process type="gen" name="reload_latest_camera" mode="downstream"/>
+    <process type="ani" name="publish_ani_files" mode="downstream"/>
+    <process type="ani" name="submit_cycle_export_assets" mode="downstream"/>
+    <process type="lay" name="new_lay_scene_graph_xml" mode="checked"/>
+    <process type="gen" name="scan_dependency_paths" mode="downstream"/>
+    <process type="gen" name="register_publish" mode="downstream"/>
+    <process type="ani" name="set_flo_status" mode="downstream"/>
+    <process type="ani" name="export_ani_self_building" mode="downstream"/>
+    <process type="ani" name="export_ani_cycle" mode="downstream"/>
+    <process type="ani" name="export_ani_rigctrl_use" mode="downstream"/>
+    <process type="flo" name="export_efx_preview" mode="checked"/>
+    <!--<process type="ani" name="cfx_difficulty_estimate" mode="checked"/>-->
+    <process type="ani" name="export_crd_loc_clound" mode="checked"/>
+    <process type="ani" name="copy_to_flo" mode="downstream"/>
+    <process type="gen" name="shot_assets_summary" mode="checked"/>
+    <!--<process type="gen" name="change_sg_status_list" mode="downstream"/>-->
+    <process type="gen" name="release_shot_owner_lock" mode="downstream"/>
+    <process type="ani" name="ani_notes" mode="downstream"/>
+    <process type="gen" name="approve_version" mode="downstream"/>
+    <process type="ani" name="ani_cache" mode="downstream"/>
+    <process type="ani" name="add_muscle_info_to_sg" mode="checked"/>
+    <process type="ani" name="ani_publish_end_set" mode="daily"/>
+    <process type="ani" name="create_write_extra_data" mode="checked"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+    <!--    <process type="ani" name="export_scale_info" mode="downstream"/>-->
+    <!-- "merge_xmls": Because xml will not published when animators publish files on their local pc,all xml will be generated(also asb will be expanded only) on farm.Use SG event to send this job-->
+    <!-- <process type="ani" name="merge_xmls" mode="downstream"/> -->
+</root>
+

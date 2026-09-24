@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<root>
+    <stage step="aud" entity="sequence" type="" task="audio" >
+        <tag name="成品" pct="100"/>
+    </stage>
+    <stage step="art" entity="asset" type="chr" task="key_pose" >
+        <tag name="概念线稿" pct="50"/>
+        <tag name="精确线稿" pct="100"/>
+    </stage>
+    <stage step="art" entity="sequence" type="" task="color_key" >
+        <tag name="概念色稿" pct="50"/>
+        <tag name="精确色稿" pct="100"/>
+    </stage>
+    <stage step="art" entity="shot" type="" task="color_key" >
+        <tag name="概念色稿" pct="50"/>
+        <tag name="精确色稿" pct="100"/>
+    </stage>
+    <stage step="art" entity="" type="" task="" >
+        <tag name="概念线稿" pct="20"/>
+        <tag name="精确线稿" pct="40"/>
+        <tag name="概念色稿" pct="80"/>
+        <tag name="精确色稿" pct="100"/>
+    </stage>
+    <stage step="mod" entity="asset" type="" task="" >
+        <tag name="粗模" pct="30"/>
+        <tag name="精模" pct="50"/>
+<!--        <tag name="facialBuilder" pct="90"/>-->
+    </stage>
+    <stage step="rig" entity="asset" type="" task="layout_rigging" >
+        <tag name="完整版" pct="100"/>
+    </stage>
+    <stage step="rig" entity="asset" type="" task="" >
+        <tag name="身体权重" pct="40"/>
+        <tag name="加表情整合" pct="50"/>
+        <tag name="完整版" pct="100"/>
+    </stage>
+    <stage step="srf" entity="asset" type="" task="" >
+        <tag name="测试" pct="50"/>
+        <tag name="成品" pct="100"/>
+    </stage>
+    <stage step="scn" entity="sequence" type="" task="" >
+        <tag name="粗模" pct="50"/>
+        <tag name="精模" pct="100"/>
+    </stage>
+    <stage step="set" entity="shot" type="" task="" >
+        <tag name="Efx Set" pct="20"/>
+        <tag name="Rough Set" pct="30"/>
+        <tag name="Better Set" pct="60"/>
+        <tag name="Final Set" pct="100"/>
+    </stage>
+    <stage step="lay" entity="sequence" type="" task="" >
+        <tag name="第一阶段" pct="25"/>
+        <tag name="第二阶段" pct="50"/>
+        <tag name="第三阶段" pct="100"/>
+    </stage>
+    <stage step="lay" entity="shot" type="" task="" >
+        <tag name="第一阶段" pct="25"/>
+        <tag name="第二阶段" pct="50"/>
+        <tag name="第三阶段" pct="100"/>
+    </stage>
+    <stage step="ani" entity="shot" type="" task="reference" >
+        <tag name="参考" pct="100"/>
+    </stage>
+    <stage step="ani" entity="shot" type="" task="" >
+        <tag name="测试" pct="100"/>
+        <tag name="blocking" pct="40"/>
+        <tag name="animation" pct="100"/>
+    </stage>
+    <stage step="ani" entity="asset" type="" task="" >
+        <tag name="animation" pct="100"/>
+    </stage>
+    <stage step="crd" entity="asset" type="" task="" >
+        <tag name="测试" pct="40"/>
+        <tag name="成品" pct="100"/>
+    </stage>
+    <stage step="crd" entity="asset" type="oat" task="original_agents" >
+        <tag name="测试" pct="40"/>
+        <tag name="成品" pct="100"/>
+    </stage>
+    <stage step="crd" entity="shot" type="" task="" >
+        <tag name="测试" pct="40"/>
+        <tag name="成品" pct="100"/>
+    </stage>
+    <stage step="cfx" entity="asset" type="" task="" >
+        <tag name="粗略造型" pct="30"/>
+        <tag name="精细造型" pct="80"/>
+        <tag name="动态设置" pct="100"/>
+    </stage>
+    <stage step="cfx" entity="shot" type="" task="" >
+        <tag name="测试" pct="30"/>
+        <tag name="制作" pct="100"/>
+        <tag name="返修" pct="100"/>
+    </stage>
+    <stage step="plt" entity="asset" type="" task="" >
+        <tag name="测试" pct="30"/>
+        <tag name="制作" pct="100"/>
+        <tag name="返修" pct="100"/>
+    </stage>
+    <stage step="plt" entity="shot" type="" task="" >
+        <tag name="测试" pct="30"/>
+        <tag name="制作" pct="100"/>
+        <tag name="返修" pct="100"/>
+    </stage>
+    <stage step="efx" entity="" type="" task="hyperloop" >
+        <tag name="粗模" pct="50"/>
+        <tag name="高模" pct="100"/>
+    </stage>
+    <stage step="efx" entity="" type="" task="" >
+        <tag name="测试" pct="30"/>
+        <tag name="动态" pct="60"/>
+        <tag name="预合" pct="100"/>
+    </stage>
+    <stage step="cty" entity="asset" type="" task="" >
+        <tag name="测试" pct="30"/>
+        <tag name="制作" pct="100"/>
+    </stage>
+    <stage step="flo" entity="shot" type="" task="final_layout" >
+        <tag name="测试" pct="50"/>
+<!--                <tag name="回上游" pct="100"/> -->
+        <tag name="给下游" pct="100"/>
+    </stage>
+    <stage step="flo" entity="shot" type="" task="stereo" >
+        <tag name="成品" pct="50"/>
+    </stage>
+    <stage step="lgt" entity="sequence" type="" task="" >
+        <tag name="测试" pct="50"/>
+        <tag name="成品" pct="100"/>
+    </stage>
+    <stage step="lgt" entity="shot" type="" task="" >
+        <tag name="Rough lgt" pct="20"/>
+        <tag name="R3 首尾帧" pct="30"/>
+        <tag name="R1 剪切帧" pct="30"/>
+        <tag name="R2 剪切帧" pct="30"/>
+        <tag name="R2" pct="40"/>
+        <tag name="R1" pct="100"/>
+    </stage>
+    <stage step="pfx" entity="shot" type="" task="paint_fix" >
+        <tag name="R1" pct="100"/>
+    </stage>
+    <stage step="pfx" entity="shot" type="" task="floating_window" >
+        <tag name="R1" pct="100"/>
+    </stage>
+    <stage step="stb" entity="" type="" task="" >
+        <tag name="粗稿第一版" pct="30"/>
+        <tag name="精稿第一版" pct="60"/>
+        <tag name="精稿第二版" pct="100"/>
+    </stage>
+    <stage step="edt" entity="sequence" type="" task="picture_lock" >
+        <tag name="锁场" pct="100"/>
+        <tag name="立体锁场" pct="100"/>
+    </stage>
+    <stage step="edt" entity="sequence" type="" task="" >
+        <tag name="故事版粗剪" pct="50"/>
+        <tag name="镜头精剪" pct="80"/>
+        <tag name="最终精剪" pct="100"/>
+    </stage>
+    <stage step="dmt" entity="asset" type="" task="" >
+        <tag name="材质" pct="25"/>
+        <tag name="烘焙" pct="50"/>
+    </stage>
+    <stage step="dmt" entity="shot" type="" task="" >
+        <tag name="Rough dmt" pct="20"/>
+        <tag name="构图光线" pct="25"/>
+        <tag name="灯光前景单帧预合" pct="50"/>
+        <tag name="预合序列" pct="100"/>
+    </stage>
+    <stage step="vrd" entity="shot" type="" task="" >
+        <tag name="测试" pct="50"/>
+        <tag name="成品" pct="100"/>
+    </stage>
+    <stage step="top" entity="shot" type="" task="top_stretch" >
+        <tag name="测试" pct="50"/>
+        <tag name="成品" pct="100"/>
+    </stage>
+    <stage step="pan" entity="shot" type="" task="final_pano" >
+        <tag name="成品" pct="100"/>
+    </stage>
+    <stage step="" entity="" type="" task="" >
+        <tag name="n/a" pct="100"/>
+    </stage>
+</root>

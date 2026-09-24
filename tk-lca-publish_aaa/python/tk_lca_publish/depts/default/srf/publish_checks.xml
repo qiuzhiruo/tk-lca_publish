@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+        <check type="gen" name="preview_file_size" allow_skip="true"/>
+        <check type="srf" name="version_uv_only" allow_skip="false"/>
+    </check_group>
+    <check_group name="Srf Katana Check">
+        <check type="srf" name="katana_file_name" allow_skip="false"/>
+        <check type="srf" name="check_texture_path" allow_skip="false"/>
+        <check type="srf" name="check_custom_shader" allow_skip="false"/>
+        <check type="srf" name="katana_scenegraphxml" allow_skip="false"/>
+        <check type="srf" name="katana_srf_tx" allow_skip="false"/>
+        <check type="srf" name="tx_name_check" allow_skip="false"/>
+        <check type="srf" name="katana_look_bake" allow_skip="false"/>
+        <check type="srf" name="check_key_nodes_name" allow_skip="false"/>
+        <check type="srf" name="subdivide_data_out" allow_skip="false"/>
+        <check type="srf" name="check_pass" allow_skip="false"/>
+    </check_group>
+    <check_group name="Srf Shading Node Check">
+        <check type="srf" name="check_expression" allow_skip="false"/>
+        <!-- <check type="srf" name="check_normal" allow_skip="true"/>-->
+        <check type="srf" name="check_perf_node" allow_skip="false"/>
+        <check type="srf" name="check_crd_output_color" allow_skip="false"/>
+        <check type="srf" name="check_custom_texture" allow_skip="false"/>
+    </check_group>
+</root>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<root>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="gen" name="maya_version_attr" mode="downstream"/>
+    <process type="scn" name="lock_master" mode="downstream"/>
+    <process type="scn" name="publish_cam" mode="downstream"/>
+    <process type="gen" name="save_scene" mode="daily"/>
+    <process type="mod_asb" name="sg_asset_links" mode="downstream"/>
+    <process type="scn" name="publish_scn_file" mode="downstream"/>
+    <process type="scn" name="record_ar_status" mode="downstream"/>
+    <process type="mod_asb" name="asb_scene_graph_xml" mode="downstream"/>
+    <process type="scn" name="build_assembly" mode="downstream"/>
+    <process type="scn" name="create_background_dmt" mode="downstream"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <process type="gen" name="register_publish" mode="downstream"/>
+    <process type="gen" name="approve_version" mode="downstream"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+</root>
+

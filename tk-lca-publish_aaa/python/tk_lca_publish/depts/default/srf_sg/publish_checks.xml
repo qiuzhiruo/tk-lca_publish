@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+        <check type="gen" name="preview_file_size" allow_skip="true"/>
+    </check_group>
+    <check_group name="Naming Convention">
+        <check type="srf_sg" name="katana_file_name" allow_skip="false"/>
+    </check_group>
+</root>
+

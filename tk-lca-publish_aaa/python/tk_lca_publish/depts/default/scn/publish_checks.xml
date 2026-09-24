@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="version_match" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+    </check_group>
+    <check_group name="Naming and Reference Convention">
+        <check type="scn" name="check_transform" allow_skip="false"/>
+        <check type="scn" name="check_shot_node" allow_skip="false"/>
+        <check type="gen" name="check_extra_namespace" allow_skip="false"/>
+        <check type="scn" name="check_hierarchy" allow_skip="false"/>
+        <check type="scn" name="no_reference" allow_skip="false"/>
+        <check type="scn" name="no_texture" allow_skip="false"/>
+        <check type="scn" name="check_group" allow_skip="false"/>
+        <check type="lay" name="check_assembly_def" allow_skip="false"/>
+        <check type="lay" name="check_assembly_path" allow_skip="false"/>
+        <check type="lay" name="check_assembly_ns" allow_skip="false"/>
+        <check type="mod" name="check_layer" allow_skip="false"/>
+    </check_group>
+</root>
+

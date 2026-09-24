@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<root>
+    <process type="gen" name="publish_log_create" mode="downstream"/>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="ani" name="pass_lock" mode="downstream"/>
+    <process type="gen" name="reset_pivot" mode="daily"/>
+    <process type="lay" name="clean_scenes" mode="daily"/>
+<!--    <process type="ani" name="switch_muggle_to_ani" mode="checked"/>-->
+    <process type="gen" name="maya_version_attr" mode="daily"/>
+<!--    <process type="ani" name="expand_asb" mode="daily"/>-->
+    <process type="flo" name="record_shot_ar_status" mode="daily"/>
+<!--    <process type="lay" name="lay_scene_graph_xml" mode="daily"/>-->
+    <process type="flo" name="change_asb_hi_low_xml" mode="daily"/>
+    <process type="gen" name="shot_assets_summary" mode="daily"/>
+    <process type="ani" name="list_ani_assets" mode="daily"/>
+    <process type="lay" name="export_cam" mode="daily"/>
+    <process type="lay" name="export_stereo_data" mode="daily"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="ani" name="submit_cycle_export_assets" mode="downstream"/>
+    <process type="gen" name="refresh_sequence_playlist" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <process type="gen" name="register_camera" mode="daily"/>
+    <process type="gen" name="reload_latest_camera" mode="daily"/>
+    <process type="ani" name="export_crd_loc_clound" mode="checked"/>
+    <process type="ani" name="export_to_lgt" mode="checked"/>
+    <process type="lay" name="publish_lay_files" mode="daily"/>
+    <process type="lay" name="new_lay_scene_graph_xml" mode="daily"/>
+    <process type="flo" name="copy_stereo_preview" mode="daily"/>
+    <process type="flo" name="copy_to_stereo" mode="daily"/>
+    <process type="flo" name="copy_to_ani" mode="downstream"/>
+    <process type="gen" name="register_publish" mode="downstream"/>
+<!--    <process type="gen" name="approve_version" mode="downstream"/>-->
+    <process type="gen" name="release_shot_owner_lock" mode="downstream"/>
+    <process type="gen" name="approve_version" mode="downstream"/>
+    <process type="flo" name="export_efx_preview" mode="checked"/>
+    <process type="flo" name="set_stereo_status" mode="downstream"/>
+    <process type="flo" name="publish_note" mode="daily"/>
+    <process type="ani" name="ani_cache" mode="downstream"/>
+    <process type="flo" name="create_write_extra_data" mode="downstream"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+<!--    <process type="ani" name="export_scale_info" mode="downstream"/>-->
+    <!--<process type="lay" name="close_maya" mode="daily"/>-->
+    <!-- Because xml will not published when animators publish files on their local pc,all xml will be generated(also asb will be expanded only) on farm.Use SG event to send this job-->
+    <!-- <process type="ani" name="merge_xmls" mode="downstream"/> -->
+</root>
+

@@ -1,0 +1,118 @@
+#! /mnt/work/software/nuke/Nuke12.1v1/libnuke-12.1.1.so -nx
+#write_info Write_jpg file:"/mnt/proj/projects/can/shot/b70/b70540/lgt/publish/b70540.lgt.channel_check.v003/jpg/b70540.lgt.channel_check.%04d.jpg" format:"2048 858 1" chans:":rgba.red:rgba.green:rgba.blue:" framerange:"1 100" fps:"0" colorspace:"default (sRGB)" datatype:"8 bit" transfer:"unknown" views:"L" colorManagement:"Nuke"
+version 12.1 v1
+define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <window x="2560" y="24" w="2558" h="1362" screen="0">
+        <splitter orientation="1">
+            <split size="40"/>
+            <dock id="" hideTitles="1" activePageId="Toolbar.1">
+                <page id="Toolbar.1"/>
+            </dock>
+            <split size="1895" stretch="1"/>
+            <splitter orientation="2">
+                <split size="777"/>
+                <dock id="" activePageId="Viewer.1">
+                    <page id="Viewer.1"/>
+                </dock>
+                <split size="546"/>
+                <dock id="" activePageId="DAG.1" focus="true">
+                    <page id="DAG.1"/>
+                    <page id="Curve Editor.1"/>
+                    <page id="DopeSheet.1"/>
+                </dock>
+            </splitter>
+            <split size="615"/>
+            <dock id="" activePageId="Properties.1">
+                <page id="Properties.1"/>
+                <page id="uk.co.thefoundry.backgroundrenderview.1"/>
+            </dock>
+        </splitter>
+    </window>
+</layout>
+}
+Root {
+ inputs 0
+ name /mnt/work/shome/tanghaojia/LCA_gitlab_localtest/tanghaojiaPrivateHouse/ShotGun/AutoLgtPublish/NukeTemplate/generate_matte_jpg.nk
+ frame 81
+ format "2048 858 0 0 2048 858 1 LCA_2K"
+ proxy_format "512 215 0 0 512 215 1 LCA_proxy"
+ proxySetting always
+ colorManagement Nuke
+ workingSpaceLUT linear
+ monitorLut sRGB
+ int8Lut sRGB
+ int16Lut sRGB
+ logLut Cineon
+ floatLut linear
+ views "L #ff0000"
+}
+Read {
+ inputs 0
+ file_type exr
+ file /mnt/proj/projects/can/shot/b70/b70540/lgt/publish/b70540.lgt.lighting.v003/exr/L/b70540.lgt.comp.####.exr
+ format "2048 858 0 0 2048 858 1 LCA_2K"
+ proxy_format "512 215 0 0 512 215 1 LCA_proxy"
+ first 1001
+ last 1039
+ origfirst 1001
+ origlast 1039
+ origset true
+ colorspace linear
+ auto_alpha true
+ name Read_exr
+ xpos 661
+ ypos -283
+}
+set Na8e7840 [stack 0]
+add_layer {matte matte.alpha matte.red matte.green matte.blue matte.r}
+Shuffle2 {
+ fromInput1 {{0} B}
+ in1 matte
+ fromInput2 {{0} B}
+ mappings "4 matte.alpha 0 0 rgba.red 0 0 matte.alpha 0 0 rgba.green 0 1 matte.alpha 0 0 rgba.blue 0 2 matte.alpha 0 0 rgba.alpha 0 3"
+ name Shuffle1
+ xpos 445
+ ypos -247
+}
+push $Na8e7840
+Grade {
+ inputs 1+1
+ white {0.868398 0.193205 1.188397 1}
+ white_panelDropped true
+ name Grade3
+ xpos 661
+ ypos -104
+}
+Write {
+ file /mnt/proj/projects/can/shot/b70/b70540/lgt/publish/b70540.lgt.channel_check.v003/jpg/b70540.lgt.channel_check.####.jpg
+ file_type jpeg
+ _jpeg_quality 1
+ render_order 1001
+ checkHashOnRead false
+ version 28
+ name Write_jpg
+ xpos 661
+ ypos -49
+}
+set Na90ac10 [stack 0]
+push $Na90ac10
+Viewer {
+ inputs 2
+ frame_range 100-100
+ colour_sample_bbox {0.326171875 -0.2197265625 0.3271484375 -0.21875}
+ translate {-1.302000046 -0.2919999957}
+ name Viewer2
+ xpos -204
+ ypos -4
+}
+push $Na8e7840
+push $Na90ac10
+Viewer {
+ inputs 2
+ frame_range 1-100
+ colour_sample_bbox {0.224609375 -0.3193359375 0.2255859375 -0.318359375}
+ name Viewer1
+ xpos -39
+ ypos -8
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<root>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="cfx" name="move_hair_cache" mode="downstream"/>
+    <process type="cfx" name="export_proxy_cache" mode="downstream"/>
+    <process type="cfx" name="export_mesh_xml" mode="downstream"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="gen" name="refresh_sequence_playlist" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <process type="cfx" name="export_cache_status" mode="daily"/>
+    <process type="cfx" name="compare_cache" mode="downstream"/>
+    <process type="cfx" name="update_cycle_cache" mode="downstream"/>
+    <process type="gen" name="approve_version" mode="downstream"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+    <process type="cfx" name="cfx_notes" mode="downstream"/>
+</root>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="aud" name="cut_seq_wav" mode="daily"/>
+    <process type="aud" name="add_wave_length" mode="daily"/>
+    <process type="aud" name="publish_audio_files" mode="daily"/>
+    <process type="aud" name="publish_config_files" mode="downstream"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="aud" name="write_html" mode="daily"/>
+    <process type="aud" name="set_sg_duration" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <!--<process type="aud" name="chara_wav_conversion" mode="downstream"/>-->
+    <process type="aud" name="register_publish" mode="daily"/>
+    <process type="aud" name="publish_mail" mode="daily"/>
+</root>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+    </check_group>
+    <check_group name="Alembic">
+        <check type="mod_dynamic" name="abc_file_name" allow_skip="false"/>
+        <check type="mod_dynamic" name="xml_from_model" allow_skip="false"/>
+        <check type="mod_dynamic" name="xml_from_abc" allow_skip="false"/>
+    </check_group>
+</root>
+

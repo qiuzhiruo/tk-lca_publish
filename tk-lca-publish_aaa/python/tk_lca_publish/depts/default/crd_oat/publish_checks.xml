@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="version_match" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+        <check type="crd_oat" name="check_layer" allow_skip="false"/>
+        <check type="crd_oat" name="check_oat_agent" allow_skip="false"/>
+        <check type="crd_oat" name="check_oat_subassets" allow_skip="false"/>
+    </check_group>
+</root>
+

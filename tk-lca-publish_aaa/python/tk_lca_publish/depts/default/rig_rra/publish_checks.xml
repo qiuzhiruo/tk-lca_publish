@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="rig" name="rra_file_check" allow_skip="false"/>
+
+    </check_group>
+    <check_group name="Naming and Reference Convention">
+        <check type="mod_rra" name="check_hierarchy" allow_skip="false"/>
+        <check type="mod_asb" name="consistent_namespace" allow_skip="false"/>
+        <check type="mod_rra" name="group_end_with_grp" allow_skip="false"/>
+        <check type="mod_asb" name="ref_rig_if_any" allow_skip="false"/>
+        <check type="gen" name="unknown_reference" allow_skip="false"/>
+        <check type="gen" name="empty_reference_node" allow_skip="false"/>
+        <check type="gen" name="check_extra_namespace" allow_skip="false"/>
+        <check type="gen" name="reference_withoutCopyNumber" allow_skip="false"/>
+        <check type="gen" name="assets_path_check" allow_skip="false"/>
+    </check_group>
+    <check_group name="rra">
+        <check type="mod_rra" name="no_chr_crd_rra" allow_skip="false"/>
+        <check type="mod_rra" name="identity_transform" allow_skip="false"/>
+        <check type="mod_rra" name="no_empty_trans" allow_skip="false"/>
+        <check type="gen" name="check_ctrl_pivot" allow_skip="false"/>
+        <check type="gen" name="moved_root_ctrl" allow_skip="false"/>
+<!--        <check type="mod_asb" name="assets_compare_previous" allow_skip="true"/>-->
+        <!--check type="mod" name="image_file" allow_skip="false"/-->
+    </check_group>
+</root>

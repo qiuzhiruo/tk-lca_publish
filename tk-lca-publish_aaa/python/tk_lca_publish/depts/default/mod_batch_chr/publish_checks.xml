@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name_batch" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="version_match" allow_skip="false"/>
+        <check type="gen" name="preview_file_name_batch" allow_skip="false"/>
+
+
+    </check_group>
+    <check_group name="Naming Convention">
+        <check type="gen" name="check_asset_master" allow_skip="false"/>
+        <check type="mod" name="unlock_transform_batch" allow_skip="false"/>
+        <check type="mod" name="check_hierarchy" allow_skip="false"/>
+        <check type="mod" name="no_instanced_node" allow_skip="false"/>
+        <check type="mod" name="unique_name" allow_skip="false"/>
+        <check type="mod" name="transform_name_batch" allow_skip="false"/>
+        <check type="mod" name="mesh_name_batch" allow_skip="false"/>
+        <check type="mod" name="check_relation_asset" allow_skip="false"/>
+        <check type="mod" name="no_standalone_group_batch" allow_skip="false"/>
+        <check type="mod" name="unique_name" allow_skip="false"/>
+        <!--check type="mod" name="check_hair_patch" allow_skip="false"/-->
+        <!--check type="mod" name="other_file_name_batch" allow_skip="false"/-->
+
+    </check_group>
+    <check_group name="Modeling 1">
+        <check type="mod" name="mesh_control_warning_batch" allow_skip="false"/>
+        <check type="gen" name="match_hierarchy_batch" allow_skip="false"/>
+        <check type="mod" name="unknown_nodes_batch" allow_skip="false"/>
+        <check type="gen" name="check_extra_namespace" allow_skip="false"/>
+        <check type="mod" name="pivot_on_orgion_batch" allow_skip="false"/>
+        <!--check type="mod" name="above_the_ground_batch" allow_skip="true"/-->
+        <!--check type="mod" name="lod_match" allow_skip="false"/-->
+        <check type="mod" name="combine_topology_check" allow_skip="false"/>
+        <check type="mod" name="character_shaders_batch" allow_skip="false"/>
+        <check type="gen" name="working_units" allow_skip="false"/>
+
+    </check_group>
+    <check_group name="Modeling 2">
+        <!--check type="mod" name="one_shader_per_obj" allow_skip="true"/-->
+        <check type="mod" name="geo_overlapping" allow_skip="true"/>
+        <!--check type="mod" name="vertex_edge" allow_skip="true"/-->
+        <!--check type="mod" name="face_edge" allow_skip="false"/-->
+        <!--check type="mod" name="vertex_edge_face" allow_skip="true"/-->
+        <check type="mod" name="vertex_edge_b" allow_skip="true"/>
+        <check type="mod" name="face_edge_b" allow_skip="false"/>
+        <check type="mod" name="no_empty_mesh" allow_skip="false"/>
+        <check type="mod" name="no_empty_trans_batch" allow_skip="false"/>
+        <!--check type="mod" name="chr_intersect" allow_skip="true"/-->
+    </check_group>
+    <check_group name="Topology">
+        <check type="mod" name="normal_is_checked" allow_skip="false"/>
+        <check type="mod" name="extremely_short_edge" allow_skip="false"/>
+        <check type="mod" name="nonmanifold_face" allow_skip="false"/>
+        <check type="mod" name="uv_holes_batch" allow_skip="false"/>
+        <check type="mod" name="exceed_range_uv" allow_skip="false"/>
+        <check type="mod" name="vertex_isolated" allow_skip="false"/>
+        <!--check type="mod" name="vertex_overlap" allow_skip="true"/-->
+        <check type="mod" name="light_check" allow_skip="false"/>
+        <check type="mod" name="glass_check" allow_skip="false"/>
+        <!--check type="mod" name="symmetrical_check" allow_skip="true"/-->
+    </check_group>
+    <check_group name="Pipeline">
+        <check type="mod" name="reorder_by_name" allow_skip="true"/>
+        <check type="mod" name="no_srf_check" allow_skip="false"/>
+        <check type="mod" name="image_file_batch" allow_skip="false"/>
+        <!--check type="mod" name="print_boundingBox" allow_skip="true"/-->
+        <check type="mod" name="color_id_cache_check" allow_skip="true"/>
+        <check type="mod" name="chr_camera_check" allow_skip="false"/>
+        <check type="mod_asm" name="asm_mesh" allow_skip="false"/>
+        <check type="mod" name="model_mesh_xml_batch" allow_skip="false"/>
+        <check type="gen" name="maya_ban_script_node_batch" allow_skip="false"/>
+        <check type="gen" name="maya_kill_putiantongqing_batch" allow_skip="false"/>
+    </check_group>
+</root>
+

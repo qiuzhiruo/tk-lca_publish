@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<root>
+    <process type="mod_asb" name="big_scene_warning" mode="downstream"/>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="mod_asb" name="write_compare_file" mode="downstream"/>
+    <process type="gen" name="maya_version_attr" mode="downstream"/>
+    <process type="gen" name="reset_pivot" mode="downstream"/>
+    <process type="mod_asb" name="to_world_space" mode="downstream"/>
+    <process type="gen" name="save_scene" mode="daily"/>
+    <process type="gen" name="sg_version_note" mode="downstream"/>
+    <process type="mod_asb" name="sg_asset_links" mode="downstream"/>
+    <process type="mod_asb" name="asb_scene_graph_xml" mode="downstream"/>
+    <process type="mod_asb" name="lock_env_transform_attr" mode="downstream"/>
+    <process type="mod_asb" name="publish_asb_files" mode="downstream"/>
+    <process type="mod_asb" name="convert_to_low" mode="downstream"/>
+    <process type="mod_asb" name="build_assembly" mode="downstream"/>
+    <process type="gen" name="create_thumbnails" mode="daily"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <process type="gen" name="register_publish" mode="downstream"/>
+    <process type="gen" name="approve_version" mode="downstream"/>
+    <process type="mod" name="change_rtk_to_sc" mode="downstream"/>
+<!--    <process type="mod_asb" name="send_asb_change_info" mode="downstream"/>-->
+    <process type="gen" name="publish_mail" mode="daily"/>
+    <process type="gen" name="close_maya" mode="daily"/>
+</root>
+

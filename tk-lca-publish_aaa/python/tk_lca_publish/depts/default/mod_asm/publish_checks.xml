@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="version_match" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+        <check type="mod_asm" name="check_asset_master" allow_skip="false"/>
+
+    </check_group>
+    <check_group name="Naming Convention">
+        <check type="mod" name="unlock_transform" allow_skip="false"/>
+        <check type="mod" name="check_hierarchy" allow_skip="false"/>
+        <check type="mod" name="no_instanced_node" allow_skip="false"/>
+        <check type="mod" name="unique_name" allow_skip="false"/>
+        <check type="mod" name="transform_name" allow_skip="false"/>
+        <check type="mod" name="mesh_name" allow_skip="false"/>
+        <check type="mod" name="no_standalone_group" allow_skip="false"/>
+        <check type="mod" name="check_hair_patch" allow_skip="false"/>
+
+    </check_group>
+    <check_group name="Modeling 1">
+        <check type="gen" name="match_hierarchy" allow_skip="false"/>
+        <check type="mod" name="unknown_nodes" allow_skip="false"/>
+        <check type="gen" name="check_extra_namespace" allow_skip="false"/>
+        <check type="mod" name="mesh_control" allow_skip="false"/>
+        <check type="mod" name="pivot_on_orgion" allow_skip="false"/>
+        <check type="mod" name="above_the_ground" allow_skip="true"/>
+        <check type="mod" name="lod_match" allow_skip="false"/>
+        <check type="mod" name="combine_topology_check" allow_skip="false"/>
+        <check type="mod" name="character_shaders" allow_skip="false"/>
+    </check_group>
+    <check_group name="Modeling 2">
+        <check type="gen" name="working_units" allow_skip="false"/>
+        <check type="mod" name="one_shader_per_obj" allow_skip="true"/>
+        <check type="mod" name="geo_overlapping" allow_skip="true"/>
+        <check type="mod" name="vertex_edge" allow_skip="true"/>
+        <check type="mod" name="face_edge" allow_skip="false"/>
+        <check type="mod" name="vertex_edge_face" allow_skip="true"/>
+        <check type="mod" name="vertex_edge_b" allow_skip="false"/>
+        <check type="mod" name="face_edge_b" allow_skip="false"/>
+        <check type="mod" name="no_empty_mesh" allow_skip="false"/>
+        <check type="mod" name="no_empty_trans" allow_skip="false"/>
+
+    </check_group>
+    <check_group name="Topology">
+        <check type="mod" name="normal_is_checked" allow_skip="false"/>
+        <check type="mod" name="extremely_short_edge" allow_skip="false"/>
+        <check type="mod" name="nonmanifold_face" allow_skip="false"/>
+        <check type="mod" name="uv_holes" allow_skip="false"/>
+        <check type="mod" name="exceed_range_uv" allow_skip="true"/>
+        <check type="mod" name="vertex_isolated" allow_skip="false"/>
+        <check type="mod" name="vertex_overlap" allow_skip="true"/>
+        <check type="mod" name="reorder_by_name" allow_skip="true"/>
+        <check type="mod" name="point_density" allow_skip="true"/>
+        <check type="mod" name="symmetrical_check" allow_skip="false"/>
+    </check_group>
+    <check_group name="Pipeline">
+        <check type="mod" name="no_srf_check" allow_skip="false"/>
+        <check type="mod" name="image_file" allow_skip="false"/>
+        <check type="mod" name="print_boundingBox" allow_skip="true"/>
+        <check type="mod_asm" name="asm_mesh" allow_skip="false"/>
+        <check type="mod" name="check_layer" allow_skip="false"/>
+        <check type="mod" name="check_duplicate_edges" allow_skip="false"/>
+    </check_group>
+</root>
+

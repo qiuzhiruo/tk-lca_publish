@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root>
+    <process type="art_shot" name="publish_art_files" mode="daily"/>
+    <process type="art_shot" name="create_sg_version" mode="daily"/>
+    <process type="art_shot" name="update_v000_preview" mode="daily"/>
+    <process type="art_shot" name="publish_mail" mode="daily"/>
+</root>

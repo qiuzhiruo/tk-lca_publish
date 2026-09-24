@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<root>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="gen" name="reset_pivot" mode="downstream"/>
+    <process type="gen" name="save_scene" mode="daily"/>
+    <process type="mod_asb" name="sg_asset_links" mode="downstream"/>
+    <process type="mod_rra" name="rra_scene_graph_xml" mode="downstream"/>
+    <process type="mod_rra" name="publish_rra_rig_files" mode="downstream"/>
+    <process type="rig" name="create_animRig_files" mode="downstream"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="gen" name="upload_preview_rig" mode="daily"/>
+    <process type="rig" name="register_publish" mode="downstream"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+</root>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<root>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="gen" name="maya_version_attr" mode="downstream"/>
+    <process type="rig" name="add_asset_pass" mode="downstream"/>
+    <process type="rig" name="fix_lay_global_ctrl" mode="downstream"/>
+    <process type="rig" name="publish_rig_files" mode="downstream"/>
+    <process type="rig" name="import_ref" mode="downstream"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="rig" name="copy_model_xml" mode="downstream"/>
+    <process type="gen" name="upload_preview_rig" mode="daily"/>
+    <process type="gen" name="register_publish" mode="downstream"/>
+    <process type="gen" name="approve_version" mode="downstream"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+    <process type="rig" name="split_asm_lay_asset" mode="downstream"/>
+
+
+</root>
+

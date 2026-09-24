@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<root>
+    <process type="mod" name="check_mesh" mode="downstream"/>
+    <process type="gen" name="save_scene" mode="downstream"/>
+    <process type="mod" name="house_reduce" mode="downstream"/>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="mod" name="save_rig_scene_dis" mode="mod3th"/>
+    <process type="mod" name="write_compare_file" mode="downstream"/>
+    <process type="mod" name="combine_set" mode="downstream"/>
+    <process type="mod" name="clean_mod_files" mode="downstream"/>
+    <process type="mod" name="model_mesh_xml" mode="downstream"/>
+    <process type="mod" name="export_face_pass_mesh_topu" mode="downstream"/>
+    <process type="mod" name="export_polygoncruncher_reduce" mode="downstream"/>
+    <process type="mod" name="publish_tex" mode="downstream"/>
+    <process type="mod" name="export_face_pass_info" mode="downstream"/>
+    <process type="mod" name="export_maya_shader_info" mode="downstream"/>
+    <process type="mod" name="add_extra_attr" mode="downstream"/>
+    <process type="gen" name="apply_latest_uv" mode="downstream"/>
+    <process type="mod" name="auto_proxy" mode="downstream"/>
+    <process type="mod" name="mesh_count" mode="downstream"/>
+    <process type="mod" name="export_head_info" mode="downstream"/>
+    <process type="gen" name="maya_version_attr" mode="downstream"/>
+    <process type="mod" name="display_smoothness" mode="downstream"/>
+    <process type="mod" name="add_mouth_mtl" mode="downstream"/>
+    <process type="mod" name="export_to_srf" mode="downstream"/>
+<!--    <process type="mod" name="export_polygoncruncher_reduce" mode="downstream"/>-->
+    <!--<process type="mod" name="convert_hair_patch" mode="downstream"/>-->
+    <process type="gen" name="publish_maya_texture_file" mode="downstream"/>
+    <process type="gen" name="asset_scene_graph_xml" mode="downstream"/>
+    <process type="mod" name="record_hair_info" mode="downstream"/>
+    <process type="mod" name="publish_mod_files" mode="downstream"/>
+    <process type="mod" name="publish_dynamic_files" mode="downstream"/>
+    <process type="mod" name="gpu_cache" mode="downstream"/>
+    <process type="mod" name="color_id_cache" mode="downstream"/>
+    <process type="mod" name="delete_auto_proxy" mode="downstream"/>
+    <!-- <process type="gen" name="restore_original_shader" mode="downstream"/>-->
+    <process type="mod" name="clean_normals" mode="downstream"/>
+    <process type="mod" name="model_shader_xml" mode="downstream"/>
+    <process type="mod" name="model_faces_count" mode="downstream"/>
+    <process type="mod" name="chr_camera_cache" mode="downstream"/>
+    <process type="mod" name="note_sub_parent_assets" mode="downstream"/>
+    <process type="gen" name="create_thumbnails" mode="daily"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <process type="gen" name="register_publish" mode="downstream"/>
+    <!-- <process type="gen" name="write_wulala_info" mode="downstream"/> -->
+    <process type="gen" name="approve_version" mode="downstream"/>
+    <process type="mod" name="change_rtk_to_sc" mode="downstream"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+    <process type="mod" name="lock_transform" mode="downstream"/>
+    <process type="gen" name="sg_version_note" mode="downstream"/>
+<!--    <process type="mod" name="add_extra_attr" mode="downstream"/>-->
+<!--    <process type="gen" name="save_scene" mode="downstream"/>-->
+    <process type="mod" name="build_mod_usd_file" mode="downstream"/>
+<!--    <process type="mod" name="build_gpuma_ma" mode="downstream"/>-->
+    <process type="mod" name="save_scene_mod3th" mode="mod3th"/>
+    <process type="mod" name="change_asset_description" mode="downstream"/>
+    <process type="mod" name="send_topology_msg" mode="downstream"/>
+    <process type="mod" name="chr_note_downstream" mode="downstream"/>
+    <process type="mod" name="change_asset_sg_info" mode="downstream"/>
+    <process type="mod" name="update_parent_asset" mode="downstream"/>
+    <process type="mod" name="pass_render" mode="downstream"/>
+
+</root>
+

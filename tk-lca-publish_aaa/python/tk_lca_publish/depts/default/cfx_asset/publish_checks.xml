@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+        <check type="gen" name="maya_ban_script_node" allow_skip="true"/>
+        <check type="gen" name="maya_kill_putiantongqing" allow_skip="false"/>
+    </check_group>
+    <check_group name="CFX Asset Checks">
+        <check type="gen" name="check_asset_master" allow_skip="false"/>
+        <check type="gen" name="exclusive_names" allow_skip="false"/>
+        <check type="cfx" name="check_reference" allow_skip="true"/>
+        <check type="cfx" name="check_hierarchy" allow_skip="false"/>
+        <check type="cfx" name="check_sets_name" allow_skip="false"/>
+        <check type="cfx" name="check_rig_pass" allow_skip="true"/>
+        <check type="gen" name="check_extra_namespace" allow_skip="false"/>
+        <check type="gen" name="match_hierarchy" allow_skip="true"/>
+        <check type="gen" name="working_units" allow_skip="false"/>
+    </check_group>
+    <check_group name="CFX Hair Checks">
+        <check type="cfx" name="check_flg_asset" allow_skip="false"/>
+        <check type="cfx" name="check_node_name" allow_skip="false"/>
+        <check type="cfx" name="check_patches_name" allow_skip="true"/>
+        <check type="cfx" name="check_xgen_xgmSubdPatch" allow_skip="false"/>
+        <check type="cfx" name="check_xgen_correct" allow_skip="false"/>
+        <check type="cfx" name="check_faceid_length" allow_skip="false"/>
+        <check type="cfx" name="check_xgen_tex" allow_skip="true"/>
+        <check type="cfx" name="check_xgen_xgDataPath" allow_skip="false"/>
+        <check type="cfx" name="check_xgen_xgFileName" allow_skip="false"/>
+        <check type="cfx" name="check_xgen_attribute" allow_skip="false"/>
+        <check type="cfx" name="check_render_set" allow_skip="false"/>
+        <check type="cfx" name="check_asset_yeti_texture" allow_skip="false"/>
+        <check type="cfx" name="check_user_attributes_prefix" allow_skip="false"/>
+    </check_group>
+    <check_group name="CFX Hair Checks 1">
+          <check type="cfx" name="check_hanmao_xgenName" allow_skip="true"/>
+    </check_group>
+</root>
+

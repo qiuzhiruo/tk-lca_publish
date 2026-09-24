@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<root>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="gen" name="create_thumbnails" mode="daily"/>
+    <process type="srf" name="publish_srf_files" mode="downstream"/>
+    <process type="srf" name="push_uv" mode="downstream"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <process type="gen" name="approve_version" mode="downstream"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+    <process type="gen" name="sg_version_note" mode="downstream"/>
+    <!-- <process type="gen" name="write_wulala_info" mode="downstream"/> -->
+</root>
+

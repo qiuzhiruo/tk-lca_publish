@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="true"/>
+        <check type="gen" name="version_up_going" allow_skip="true"/>
+        <check type="gen" name="version_match" allow_skip="true"/>
+        <check type="gen" name="preview_file_name" allow_skip="true"/>
+        <check type="gen" name="mov_file_source" allow_skip="true"/>
+    </check_group>
+    <check_group name="Scene Cleaning">
+        <check type="mod" name="unknown_nodes" allow_skip="true"/>
+        <check type="ani" name="isolated_curves" allow_skip="true"/>
+        <check type="lay" name="check_ref_name_space" allow_skip="true"/>
+        <check type="gen" name="reference_withoutCopyNumber" allow_skip="true"/>
+        <check type="ani_crowd" name="check_assets_path" allow_skip="true"/>
+        <check type="ani_crowd" name="skeletons_group_exists" allow_skip="true"/>
+        <check type="ani_crowd" name="action_naming" allow_skip="true"/>
+    </check_group>
+</root>
+

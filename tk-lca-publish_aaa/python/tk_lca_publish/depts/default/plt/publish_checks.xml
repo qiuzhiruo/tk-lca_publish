@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+        <check type="gen" name="maya_ban_script_node" allow_skip="true"/>
+        <check type="gen" name="maya_kill_putiantongqing" allow_skip="false"/>
+    </check_group>
+    <check_group name="Plant Checks">
+        <check type="gen" name="check_asset_master" allow_skip="false"/>
+        <check type="plt" name="check_archive_path" allow_skip="false"/>
+        <check type="plt" name="check_reference" allow_skip="false"/>
+        <check type="plt" name="check_hierarchy" allow_skip="false"/>
+        <check type="plt" name="check_sets_name" allow_skip="false"/>
+        <check type="gen" name="check_extra_namespace" allow_skip="false"/>
+        <check type="gen" name="working_units" allow_skip="false"/>
+        <check type="plt" name="check_frame_rand" allow_skip="false"/>
+    </check_group>
+</root>
+

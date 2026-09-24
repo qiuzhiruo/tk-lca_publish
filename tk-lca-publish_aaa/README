@@ -1,0 +1,11 @@
+v0.1.24
+fix: Use the wild card to instead of the full file names, which break the pdf convert command coz
+     the line is too long
+
+V0.1.21
+new: launch the dialog for the specific department
+new: modulized page
+new: modulized checks
+new: force to add comment
+
+copy from 10.0.0.6 on 2019.10.11

@@ -1,0 +1,88 @@
+# -*- coding:utf-8 -*-
+
+########################################################################################
+#
+# Copyright (c) 2013 Light Chaser Animation
+#
+# Author: Liu Lu
+#
+# Date: 2013.07
+#
+# Description: model publish tool. 
+#
+########################################################################################
+
+import os
+import sys
+import pprint
+import shutil
+import traceback
+import time
+import getpass
+
+try:
+    import sgtk
+    from sgtk.platform.qt import QtCore, QtGui
+
+    # TODO
+    import publish_dialog
+    reload(publish_dialog)
+    from publish_dialog import PublishDialog
+
+    from ....ui.dialog import Ui_Dialog
+    from ....ui.widget_sys import Ui_Form as widget_sys
+    from ....ui.widget_file import Ui_Form as widget_file
+    from ....ui.widget_version import Ui_Form as widget_version
+    from ....ui.widget_check import Ui_Form as widget_check
+    from ....ui.widget_publish import Ui_Form as widget_publish
+
+    from ....ui.widget_file_mod_dynamic import Ui_Form as widget_publish_file
+
+except:
+    print traceback.format_exc()
+
+
+class AppDialog(PublishDialog):
+    
+    def __init__(self, app):
+
+        try:
+            PublishDialog.__init__(self, app)
+
+            # Get environment info & production info from sgtk
+            self.set_vars()
+            self.set_dept_vars( __file__ )
+
+            # set up the UI, which includes the dialog and all process widgets            
+            self.setup_gui(Ui_Dialog, widget_sys, widget_version, widget_file, widget_check, widget_publish, widget_publish_file)
+
+            # setup widget functions
+            self.do_bind()
+            self.w_publish_file.pushButton_dynamic.clicked.connect(self.on_pick_dynamic)
+            self.w_publish_file.pushButton_proxy.clicked.connect(self.on_pick_proxy)
+
+            self.show_app_info()
+
+        except sgtk.TankError, e:
+            self._app.log_error(str(e))
+
+        except Exception:
+            print traceback.format_exc()
+            self._app.log_error(traceback.format_exc())
+        
+        return
+
+    def on_pick_dynamic(self):
+        self.w_publish_file.listWidget_dynamic.clear()
+        dynamic_file = QtGui.QFileDialog.getOpenFileName(self, "Pick dynamic files", self.work_root, "Alembic File(*.abc)")[0]
+        if os.path.isfile(dynamic_file):
+            self.w_publish_file.listWidget_dynamic.addItem(dynamic_file.replace('\\', '/'))
+        return
+
+    def on_pick_proxy(self):
+        self.w_publish_file.listWidget_proxy.clear()
+        proxy_file = QtGui.QFileDialog.getOpenFileName(self, "Pick proxy files", self.work_root, "Alembic File(*.abc)")[0]
+        if os.path.isfile(proxy_file):
+            self.w_publish_file.listWidget_proxy.addItem(proxy_file.replace('\\', '/'))
+        return
+

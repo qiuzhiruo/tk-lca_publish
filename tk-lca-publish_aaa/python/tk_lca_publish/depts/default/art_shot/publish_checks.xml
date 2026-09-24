@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="art_shot" name="check_colorkey_file_name" allow_skip="false"/>
+        <check type="art_shot" name="check_art_task" allow_skip="false"/>
+        <check type="art_shot" name="check_art_folder_exists" allow_skip="false"/>
+    </check_group>
+</root>

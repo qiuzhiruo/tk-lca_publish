@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root>
+    <process type="gen" name="create_dir_on_server" mode="daily"/>
+    <process type="plt" name="copy_xg_to_publish" mode="downstream"/>
+    <process type="plt" name="publish_mel_and_prox" mode="downstream"/>
+    <process type="gen" name="create_sg_version" mode="daily"/>
+    <process type="gen" name="upload_preview" mode="daily"/>
+    <process type="plt" name="upload_plt_preview" mode="daily"/>
+    <process type="gen" name="register_publish" mode="downstream"/>
+    <process type="gen" name="publish_mail" mode="daily"/>
+    <process type="plt" name="update_sg_render_info" mode="daily"/>
+</root>
+

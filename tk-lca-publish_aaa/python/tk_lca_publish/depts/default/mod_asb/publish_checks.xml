@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="version_match" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+    </check_group>
+    <check_group name="Naming and Reference Convention">
+        <check type="mod_asb" name="check_hierarchy" allow_skip="false"/>
+        <check type="mod_asb" name="consistent_namespace" allow_skip="false"/>
+        <check type="mod_asb" name="group_end_with_grp" allow_skip="false"/>
+        <check type="mod_asb" name="group_same_name" allow_skip="false"/>
+        <check type="mod_asb" name="ref_rig_if_any" allow_skip="false"/>
+        <check type="gen" name="unknown_reference" allow_skip="false"/>
+        <check type="gen" name="empty_reference_node" allow_skip="false"/>
+        <check type="mod_asb" name="check_extra_namespace" allow_skip="false"/>
+        <check type="mod_asb" name="reference_withoutCopyNumber" allow_skip="false"/>
+        <check type="mod_asb" name="no_empty_trans" allow_skip="false"/>
+        <check type="mod" name="check_layer" allow_skip="false"/>
+    </check_group>
+    <check_group name="Assembly A">
+        <!--check type="mod_asb" name="no_chr_crd_asb" allow_skip="false"/-->
+        <check type="mod_asb" name="only_reference" allow_skip="false"/>
+        <check type="mod_asb" name="identity_transform" allow_skip="false"/>
+        <check type="mod_asb" name="check_assembly_scale" allow_skip="false"/>
+        <check type="lay" name="check_omit_assets" allow_skip="false"/>
+        <check type="lay" name="check_omit_ar_assets" allow_skip="false"/>
+        <check type="lay" name="check_assembly_def" allow_skip="false"/>
+        <check type="lay" name="check_assembly_path" allow_skip="false"/>
+        <check type="lay" name="check_assembly_ns" allow_skip="false"/>
+        <check type="mod_asb" name="misplaced_assembly" allow_skip="false"/>
+        <check type="mod_asb" name="check_overlap" allow_skip="false"/>
+        <check type="mod_asb" name="check_ref_version_a" allow_skip="false"/>
+    </check_group>
+    <check_group name="Assembly B">
+        <check type="mod_asb" name="check_ref_version_b" allow_skip="false"/>
+        <check type="mod_asb" name="compare_with_last" allow_skip="false"/>
+        <check type="mod_asb" name="assets_xfrom" allow_skip="true"/>
+        <check type="mod_asb" name="record_xform_info" allow_skip="false"/>
+        <check type="mod_asb" name="assets_add" allow_skip="true"/>
+        <check type="mod_asb" name="plt_proxy_tag" allow_skip="false"/>
+        <check type="mod" name="reorder_by_name" allow_skip="true"/>
+        <check type="mod" name="td_rocks" allow_skip="false"/>
+        <check type="mod_asb" name="assets_miss_with_tag" allow_skip="false"/>
+        <check type="mod_asb" name="asb_veh_check" allow_skip="false"/>
+        <check type="mod_asb" name="check_chr_in_asb" allow_skip="false"/>
+    </check_group>
+    <check_group name="Assembly C">
+        <check type="mod_asb" name="check_ar_count" allow_skip="false"/>
+        <check type="mod_asb" name="check_ar_xml" allow_skip="false"/>
+    </check_group>
+</root>

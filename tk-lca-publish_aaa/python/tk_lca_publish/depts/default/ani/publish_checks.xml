@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Chr Pass Checks">
+    </check_group>
+    <check_group name="Chr Tpose Checks">
+    </check_group>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="version_match" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+        <check type="gen" name="mov_file_source" allow_skip="false"/>
+        <check type="gen" name="mov_file_range" allow_skip="false"/>
+        <!--<check type="ani" name="check_previous_stage" allow_skip="false"/>-->
+        <check type="lay" name="check_assets_ref" allow_skip="false"/>
+        <!-- <check type="gen" name="maya_ban_script_node" allow_skip="true"/> -->
+        <check type="gen" name="maya_kill_putiantongqing" allow_skip="false"/>
+<!--        <check type="gen" name="shot_ani_cut_matches" allow_skip="true"/>-->
+    </check_group>
+    <check_group name="File Checks1">
+        <check type="ani" name="check_stage_pivot" allow_skip="false"/>
+        <check type="gen" name="check_hierarchy" allow_skip="false"/>
+        <check type="lay" name="check_omit_assets" allow_skip="false"/>
+        <check type="ani" name="check_layout_rigging" allow_skip="false"/>
+        <check type="ani" name="check_model_layout" allow_skip="false"/>
+        <check type="ani" name="check_assets_mb" allow_skip="false"/>
+        <check type="lay" name="check_ref_name_space" allow_skip="false"/>
+        <check type="gen" name="assets_path_check" allow_skip="true"/>
+        <check type="gen" name="reference_withoutCopyNumber" allow_skip="false"/>
+        <check type="lay" name="check_file_reference" allow_skip="true"/>
+        <check type="flo" name="check_cache_constraint" allow_skip="true"/>
+    </check_group>
+    <check_group name="File Checks2">
+        <check type="ani" name="check_assets_proj_belong_to" allow_skip="false"/>
+        <check type="lay" name="check_assembly_def" allow_skip="false"/>
+        <check type="lay" name="check_assembly_path" allow_skip="false"/>
+        <check type="lay" name="check_assembly_ns" allow_skip="false"/>
+        <check type="lay" name="check_assembly_hierarchy" allow_skip="false"/>
+        <!--<check type="ani" name="check_intersection_mov" allow_skip="false"/>-->
+        <check type="gen" name="exclusive_names" allow_skip="false"/>
+        <check type="ani" name="check_to_efx_obj_name" allow_skip="true"/>
+        <check type="ani" name="check_hidden_group_under_assets" allow_skip="false"/>
+        <!-- <check type="ani" name="check_hidden_objects" allow_skip="false"/> -->
+        <check type="ani" name="check_vfx_grp" allow_skip="false"/>
+        <check type="ani" name="check_efx_grp" allow_skip="false"/>
+    </check_group>
+    <check_group name="Ani Checks1">
+        <check type="ani" name="mov_file_audio" allow_skip="false"/>
+        <check type="gen" name="check_shot_frange" allow_skip="false"/>
+        <check type="ani" name="check_pre_render" allow_skip="false"/>
+        <check type="ani" name="check_lip_sync_note" allow_skip="false"/>
+        <check type="ani" name="handles_preroll" allow_skip="true"/>
+        <check type="ani" name="t_pose_preroll" allow_skip="true"/>
+        <check type="ani" name="ik_fk_switch" allow_skip="true"/>
+        <check type="ani" name="check_by_shot" allow_skip="true"/>
+        <!--<check type="ani" name="check_assets_activation" allow_skip="true"/>-->
+        <!--check type="ani" name="check_edt_approval" allow_skip="false"/-->
+        <check type="ani" name="check_gpu_cache" allow_skip="false"/>
+        <check type="ani" name="check_proxy_vis" allow_skip="false"/>
+        <check type="lay" name="check_assembly_wrong_hierarchy" allow_skip="true"/>
+    </check_group>
+    <check_group name="Ani Checks2">
+        <check type="ani" name="check_crd_assets" allow_skip="false"/>
+<!--        <check type="ani" name="check_crd_prp" allow_skip="false"/>-->
+        <check type="ani" name="check_crd_joint" allow_skip="false"/>
+        <check type="ani" name="check_crd_for_shot" allow_skip="true"/>
+        <check type="ani" name="check_mod_level" allow_skip="false"/>
+        <check type="ani" name="check_ani_layers" allow_skip="false"/>
+        <!-- <check type="ani" name="check_asset_look" allow_skip="false"/> -->
+        <!--<check type="ani" name="check_assets_repeated_name" allow_skip="true"/>-->
+        <check type="lay" name="check_file_img_path" allow_skip="false"/>
+        <check type="ani" name="check_mute_animation" allow_skip="false"/>
+        <check type="lay" name="check_asb_root_con" allow_skip="true"/>
+        <check type="ani" name="check_big_scene_ref_name_space" allow_skip="true"/>
+        <check type="ani" name="check_reins_dyn_exist" allow_skip="true"/>
+    </check_group>
+    <check_group name="Ani Checks3">
+        <check type="ani" name="check_ani_xml" allow_skip="true"/>
+        <check type="ani" name="check_ctrl_scale" allow_skip="true"/>
+        <check type="ani" name="check_layers_state" allow_skip="true"/>
+    </check_group>
+    <check_group name="Scene Cleaning">
+        <!--<check type="mod" name="unknown_nodes" allow_skip="false"/>-->
+        <!--<check type="ani" name="check_camera" allow_skip="false"/>-->
+        <check type="lay" name="check_camera_solid" allow_skip="false"/>
+        <check type="ani" name="check_camera_lock" allow_skip="false"/>
+        <check type="ani" name="check_camera_constraints" allow_skip="false"/>
+        <check type="ani" name="check_camera_dependency" allow_skip="false"/>
+        <!--check type="ani" name="isolated_curves" allow_skip="false"/-->
+        <check type="ani" name="clean_safearea_node" allow_skip="false"/>
+        <check type="ani" name="nodes_under_hi" allow_skip="false"/>
+        <check type="lay" name="check_import_assets" allow_skip="false"/>
+        <check type="gen" name="empty_reference_node" allow_skip="false"/>
+        <check type="ani" name="check_assets_master" allow_skip="false"/>
+        <check type="ani" name="check_cycle_global_ctrl_key" allow_skip="false"/>
+        <!-- <check type="gen" name="check_layer_name" allow_skip="false"/> --> <!--ani request to delete-->
+        <!--<check type="lay" name="check_ani_assets_count" allow_skip="false"/>-->
+    </check_group>
+</root>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<root>
+    <check_group name="Generic">
+        <check type="gen" name="version_name" allow_skip="false"/>
+        <check type="gen" name="version_up_going" allow_skip="false"/>
+        <check type="gen" name="preview_file_name" allow_skip="false"/>
+    </check_group>
+    <check_group name="Picture Lock">
+        <check type="picture_lock" name="parse_edt_file" allow_skip="false"/>
+        <check type="picture_lock" name="check_edt_source" allow_skip="false"/>
+        <check type="picture_lock" name="check_version_length" allow_skip="true"/>
+        <check type="picture_lock" name="parse_audio_file" allow_skip="false"/>
+        <check type="picture_lock" name="check_audio_length" allow_skip="true"/>
+        <check type="picture_lock" name="tech_summary" allow_skip="false"/>
+    </check_group>
+</root>
+

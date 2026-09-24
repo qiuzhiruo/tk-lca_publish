@@ -1,0 +1,26 @@
+<scenegraphXML version="0.1.0">
+  <instanceList>
+    <instance name="master" type="group">
+      <bounds maxx="1" maxy="1" maxz="1" minx="-1" miny="-1" minz="-1" />
+      <xform value="1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0" />
+      <arbitraryList>
+        <attribute name="modVersion" type="string" value="000" />
+      </arbitraryList>
+      <instanceList>
+        <instance name="poly" type="group">
+          <bounds maxx="1" maxy="1" maxz="1" minx="-1" miny="-1" minz="-1" />
+          <xform value="1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0" />
+          <instanceList>
+            <instance name="hi" refFile="hi.abc" refType="abc" type="reference">
+              <bounds maxx="1" maxy="1" maxz="1" minx="-1" miny="-1" minz="-1" />
+              <xform value="1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0" />
+              <proxyList>
+                <proxy name="viewer" ref="proxy.abc" />
+              </proxyList>
+            </instance>
+          </instanceList>
+        </instance>
+      </instanceList>
+    </instance>
+  </instanceList>
+</scenegraphXML>
